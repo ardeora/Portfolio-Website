@@ -1,0 +1,12 @@
+* {
+  font-family: Product Sans, Arial;
+  margin: 0;
+  padding: 0;
+  color: black;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ECECEC;
+  /* height: 9000px; */
+}
