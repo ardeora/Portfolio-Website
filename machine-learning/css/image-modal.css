@@ -1,0 +1,25 @@
+#image-modal-container {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.2);
+  height: 100vh;
+  width: 100vw;
+  z-index: 2;
+}
+
+.modal-hidden {
+  display: none;
+}
+
+.modal-shown {
+  display: block;
+}
+
+#image-modal-content {
+  position: relative;
+  background: rgba(0, 230, 134, 0.6);
+  height: 300px;
+  width: 500px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}

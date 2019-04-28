@@ -10,3 +10,17 @@ body {
   background-color: #ECECEC;
   /* height: 9000px; */
 }
+
+#test-photo{
+  height: 300px;
+  width: 500px;
+  object-fit: cover;
+  cursor: pointer;
+  margin: 30px auto;
+  display: block;
+  border-radius: 5px;
+}
+
+#test-photo:hover {
+  box-shadow: 0px 10px 20px rgba(95, 95, 95, 0.2);
+}
