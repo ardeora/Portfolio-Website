@@ -15,9 +15,14 @@ nav {
   margin: 0 15px;
   font-weight: 800;
   font-size: 22px;
-  cursor: pointer;
   color: black;
 }
+
+#nav-name a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 
 #nav-ul {
   line-height: 47px;

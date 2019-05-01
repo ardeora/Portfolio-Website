@@ -6,7 +6,7 @@ nav {
   top: 0; */
   height: 50px;
   transition: 1s;
-  z-index: 2000;
+  z-index: 4;
 }
 
 #nav-name {
@@ -15,8 +15,12 @@ nav {
   margin: 0 15px;
   font-weight: 800;
   font-size: 22px;
-  cursor: pointer;
   color: black;
+}
+
+#nav-name a {
+  text-decoration: none;
+  cursor: pointer;
 }
 
 #nav-ul {
@@ -29,7 +33,7 @@ nav {
   transition: max-height 1s;
   overflow: hidden;
   position: relative;
-  z-index: 2000;
+  z-index: 4;
 }
 
 .nav-list-element {

@@ -52,7 +52,8 @@
 }
 
 .project-title {
-  font-family: 'Merriweather';
+  font-family: 'Product Sans';
+  font-weight: 400;
   text-align: left;
   margin-left: 8px;
   margin-top: 6px;

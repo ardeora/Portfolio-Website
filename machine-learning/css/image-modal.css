@@ -1,9 +1,9 @@
 #image-modal-container {
-  position: absolute;
-  background: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  background: rgba(0, 0, 0, 0.7);
   height: 100vh;
   width: 100vw;
-  z-index: 2;
+  z-index: 5;
 }
 
 .modal-hidden {
@@ -14,12 +14,38 @@
   display: block;
 }
 
+#modal-close-btn {
+  position: absolute;
+  font-size: 42px;
+  background: none;
+  outline: none;
+  text-decoration: none;
+  border: none;
+  color: rgba(0, 0, 0, 0.6);
+  left: 99%;
+  transform: translate(-100%,-10px);
+  cursor: pointer;
+}
+
+#modal-close-btn:hover{
+  color: rgba(0, 0, 0, 0.4);
+}
+
+#modal-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
 #image-modal-content {
   position: relative;
   background: rgba(0, 230, 134, 0.6);
-  height: 300px;
-  width: 500px;
+  height: 500px;
+  width: 300px;
   top: 50%;
   left: 50%;
+  z-index: 6;
   transform: translate(-50%,-50%);
+  border-radius: 5px;
 }

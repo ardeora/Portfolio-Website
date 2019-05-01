@@ -12,8 +12,18 @@ body {
 }
 
 #test-photo{
-  height: 300px;
-  width: 500px;
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  cursor: pointer;
+  margin: 30px auto;
+  display: block;
+  border-radius: 5px;
+}
+
+#test-photo2{
+  height: 400px;
+  width: 600px;
   object-fit: cover;
   cursor: pointer;
   margin: 30px auto;
