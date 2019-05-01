@@ -36,17 +36,10 @@ $(function() {
         $('#modal-image').attr('src', source);
         aspectRatio = image.clientWidth/image.clientHeight;
       }
-      console.log(aspectRatio);
-      if (modalImage.clientWidth >= modalImage.clientHeight || w < modalImage.clientWidth) {
-        let contentWidth = 0.8*w;
-        let contentHeight = contentWidth * (1/aspectRatio);
-        modalContent.css({height: contentHeight, width: contentWidth});
-      }
 
-      if (modalImage.clientWidth < modalImage.clientHeight || h < modalImage.clientHeight) {
-        let contentHeight = 0.8*h;
-        let contentWidth = contentHeight * aspectRatio;
-        modalContent.css({height: contentHeight, width: contentWidth});
-      }
+      let contentWidth = 0.8*w;
+      let contentHeight = contentWidth * (1/aspectRatio);
+      modalContent.css({height: contentHeight, width: contentWidth});
+
     }
 });

@@ -40,7 +40,7 @@
 
 #image-modal-content {
   position: relative;
-  background: rgba(0, 230, 134, 0.6);
+  /* background: rgba(0, 230, 134, 0.6); */
   height: 500px;
   width: 300px;
   top: 50%;
