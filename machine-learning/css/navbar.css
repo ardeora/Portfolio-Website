@@ -1,4 +1,7 @@
-
+:root {
+  --nav-bg-color: #D5E7F2;
+  --nav-bg-color-hover: #7EBCF2;
+}
 /* NAVBAR STYLING */
 nav {
   /* position: sticky;
@@ -138,11 +141,11 @@ nav {
   }
 
   .grey-bg {
-    background: #D1D0D0;
+    background: var(--nav-bg-color);
   }
   #nav-ul {
     max-height: 0;
-    background: #D1D0D0;
+    background: var(--nav-bg-color);
     border-top: 50px;
   }
 
@@ -151,7 +154,7 @@ nav {
   }
 
   .nav-list-element:hover {
-    background-color: #B2AFAF;
+    background: var(--nav-bg-color-hover);
   }
 
   .nav-list-element {

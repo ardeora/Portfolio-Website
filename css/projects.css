@@ -60,6 +60,10 @@
   font-size: 22px;
 }
 
+.project:hover .project-title {
+  text-decoration: underline;
+}
+
 #ml-challenge .project-pic {
   height: 220px;
   background-image: url("../img/MLChallenge.svg");
