@@ -1,6 +1,6 @@
 :root {
-  --accent-color: #b8895f;
-  --accent-dark: #633833;
+  --accent-color: #f16c24;
+  --accent-dark: #df3044;
 }
 
 ::-webkit-scrollbar {
@@ -8,7 +8,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #b8895f;
+  background: #d86d5b;
   border-radius: 6px;
   border: 2px solid transparent;
   background-clip: content-box;
@@ -30,7 +30,7 @@
 }
 
 body {
-  background-color: #ddac85;
+  background-color: #f98962;
   /* height: 9000px; */
 }
 
@@ -163,6 +163,16 @@ body {
   margin-top: 5px;
   font-size: 14px;
   color: #696e84;
+}
+
+#vsauce-video {
+  margin: 0 auto;
+  margin-top: 20px;
+  height: 100%;
+  width: 100%;
+  /* width: 560px;
+  height: 315px; */
+  display: block;
 }
 @media (max-width: 750px) {
   #article {

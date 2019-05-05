@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Aryan Deora | Home</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/galton.css">
+    <link rel="stylesheet" href="css/image-modal.css">
+    <!-- <link rel="stylesheet" href="css/recentwork.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Product+Sans:100,300,400,500,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700,700i,900,900i|Noto+Sans" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="../../img/favicon.png">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  </head>
+  <body>
+
+    <div id="image-modal-container" class="modal-hidden">
+      <div id="image-modal-content">
+        <button type="button" name="modal-close" id="modal-close-btn">&times;</button>
+        <img id="modal-image">
+      </div>
+    </div>
+
+    <nav>
+      <div id="nav-icon1">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div id="nav-name"> <a href="../">Aryan Deora</a></div>
+      <div class="menu">
+        <ul id="nav-ul">
+          <li class="nav-list-element"><a href="../">Home</a></li>
+          <li class="nav-list-element"><a href="#">Resume</a></li>
+          <li class="nav-list-element"><a href="#">About</a></li>
+          <li class="nav-list-element"><a href="#">Contact</a></li>
+        </ul>
+     </div>
+    </nav>
+
+    <div id="article">
+      <div id="content-wrapper">
+        <p id="work-type">PROJECT</p>
+        <h1 id="work-title">Galton Board: Visualizing Normal Distribution</h1>
+        <p id="work-date">March 15 2018</p>
+
+        <div id="author-details">
+          <div id="author-pic"></div>
+          <a href="https://twitter.com/deora_aryan" target="_blank"><div id="author-handle"></div></a>
+        </div>
+        <img src="../img/galton-board.svg" alt="Vector graphic of a pascal's triangle" id="work-photo" class="modal-compatible image">
+
+        <div id="tools-used-wrapper">
+          <h2>TOOLS USED</h2>
+          <ul id='tools-used'>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+
+        <h3 class="heading">Order Among Chaos</h3>
+        <p class="body">
+          I took my first statistical analysis class in late 2017 and was blown away by the concept of <a href="https://en.wikipedia.org/wiki/Normal_distribution" class="article-link" target="_blank"> normal distribution </a>. The idea of chaos resulting in order was something I had difficulty wrapping my head around.
+          <br><br>
+          A few online tutorials later I came across the <a href="https://galtonboard.com/?gclid=CjwKCAjwk7rmBRAaEiwAhDGhxECCwewnKbPhrYZ7ZWNjWhbQRnpkTpspcShJJELYMOe1cOBXgvmXmRoCEJIQAvD_BwE" class="article-link" target="_blank">Galton Board</a>, a device that helped me visualize the concept of normal distribution. This device contains hundreds of small beads/balls that are dropped from the top of the device and are allowed to scatter randomly by hitting several rows of pegs in the middle.
+          <br><br>
+          As the balls fall down and collect in the slots at the bottom, you can see a pattern emerge.
+          Every single time you flip the Galton Board. You will see a Normal Distribution.
+        </p>
+
+        <div class="galton-whole">
+          <input type="submit" id="submit" value="Flip">
+          <div class="galton-container">
+              <canvas id="galton-cnv"></canvas>
+          </div>
+        </div>
+
+        <h3 class="heading">Why does this happen??</h3>
+        <p class="body">
+          Because when the balls fall through the machine, they hit the pegs in the first row. Once they do that, they have a 50-50 chance of falling to the left or right. As they hit the second row, they again get an equal chance to fall either to the right or left. This process continues all the way down to the last row.
+          <br><br>
+          In the long run, across a large number of trials (<a href="https://en.wikipedia.org/wiki/Law_of_large_numbers" class="article-link" target="_blank">Law of Large Numbers</a>), we expect balls whose complete paths contain about the same number of left and right turns to be the most common. This means that most balls will land right below where they started while only a handful will travel to the sides. We cannot guess where a particular ball will land, but can make a pretty good estimate about the general behavior that all balls will follow.
+          <br><br>
+          This results in Normal Distribution.
+          <br><br>
+          To help understand this concept better, I created a digital Galton Board for people to play with.
+          I hope this tool could prevent you from pulling your hair the night before your stat finals.
+          I will update the site with more visual tools in the coming months to make it a more comprehensive guide
+        </p>
+
+        <h3 class="heading">Where can I learn more??</h3>
+        <p class="body">
+          Michael Stevens, from the youtube channel <a href="https://www.youtube.com/user/Vsauce" class="article-link" target="_blank">VSauce</a> has an amazing video explaining normal distribution and more interesting probability concepts using the Pascal's Triangle.
+
+          <iframe id="vsauce-video" src="https://www.youtube.com/embed/UCmPmkHqHXk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <p id="footer-heading">Made By Aryan Deora</p>
+      <p id="brand-icon-holder"> <i class="fab fa-github"></i> <i class="fab fa-linkedin-in"></i> <i class="fab fa-twitter"></i> <i class="fas fa-envelope"></i></p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.min.js"></script>
+    <script type="text/javascript" src="js/navbar.js"></script>
+    <script type="text/javascript" src="js/image-modal.js"></script>
+    <script type="text/javascript" src="js/galton.js"></script>
+  </body>
+</html>

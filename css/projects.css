@@ -66,7 +66,7 @@
 
 #ml-challenge .project-pic {
   height: 220px;
-  background-image: url("../img/MLChallenge.svg");
+  background-image: url("../img/ml-challenge.svg");
 }
 
 #icore .project-pic {
@@ -105,7 +105,7 @@
 #galton .project-pic {
   height: 220px;
   /* background: black; */
-  background-image: url("../img/galtonBoard.svg");
+  background-image: url("../img/galton-board.svg");
 }
 
 @media(max-width: 750px) {
