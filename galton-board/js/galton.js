@@ -81,10 +81,11 @@ var generateBalls = setInterval(test, 30);
 // Setting Baskets
 function setBaskets() {
   for (var i = 0; i < 10; i++) {
-    allObjs.push(Bodies.rectangle(i * 40, 552, 8, 257, {isStatic: true,
-                                                         render: {
-                                                          fillStyle: foregroundColor,
-                                                          strokeStyle: foregroundColor}}));
+    allObjs.push(Bodies.rectangle(i * 40, 552, 8, 257,
+      {isStatic: true,
+       render: {
+        fillStyle: foregroundColor,
+        strokeStyle: foregroundColor}}));
   }
 }
 
