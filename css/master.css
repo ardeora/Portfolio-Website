@@ -18,6 +18,11 @@
   box-sizing: border-box;
 }
 
+.project:before {
+  opacity: 0.4;
+  content: '';
+}
+
 body {
   background-color: #ECECEC;
   /* height: 9000px; */

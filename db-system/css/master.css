@@ -1,7 +1,7 @@
 :root {
-  --accent-color: #8491F8;
-  --accent-dark: #4F63B3;
-  --accent-body: #CFC4FF;
+  --accent-color: #5EFCE8;
+  --accent-dark: #64D0EF;
+  --accent-body: #252D3E;
 }
 
 ::-webkit-scrollbar {
@@ -26,7 +26,7 @@
   font-family: Product Sans, Arial;
   margin: 0;
   padding: 0;
-  color: black;
+  color: #ECECEC;
   box-sizing: border-box;
 }
 
@@ -38,7 +38,7 @@ body {
 #article {
   min-height: 1000px;
   max-width: 745px;
-  background: #ECECEC;
+  background: #3d465c;
   margin: 30px auto;
   border-radius: 10px;
   box-shadow: 0px 10px 20px rgba(99, 56, 51, 0.2);
@@ -68,7 +68,7 @@ body {
   font-size: 14px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #696e84;
+  color: #c4c4ca;
 }
 
 #author-details {
@@ -93,7 +93,7 @@ body {
   width: 175px;
   height: 100%;
   display: inline-block;
-  background-image: url('../../img/twitterHandle.svg');
+  background-image: url('../img/twitterHandle.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -163,7 +163,7 @@ body {
   text-align: center;
   margin-top: 5px;
   font-size: 14px;
-  color: #696e84;
+  color: #c4c4ca;
 }
 
 .article-list {
