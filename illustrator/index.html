@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Aryan Deora | Home</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/image-modal.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link href="https://fonts.googleapis.com/css?family=Product+Sans:100,300,400,500,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700,700i,900,900i|Noto+Sans" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="../../img/favicon.png">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  </head>
+  <body>
+
+    <div id="image-modal-container" class="modal-hidden">
+      <div id="image-modal-content">
+        <button type="button" name="modal-close" id="modal-close-btn">&times;</button>
+        <img id="modal-image">
+      </div>
+    </div>
+
+    <nav>
+      <div id="nav-icon1">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div id="nav-name"> <a href="../">Aryan Deora</a></div>
+      <div class="menu">
+        <ul id="nav-ul">
+          <li class="nav-list-element"><a href="../">Home</a></li>
+          <li class="nav-list-element"><a href="#">Resume</a></li>
+          <li class="nav-list-element"><a href="#">About</a></li>
+          <li class="nav-list-element"><a href="#">Contact</a></li>
+        </ul>
+     </div>
+    </nav>
+
+    <div id="article">
+      <div id="content-wrapper">
+        <p id="work-type">PROJECT</p>
+        <h1 id="work-title">Restaurant Point of Sale System</h1>
+        <p id="work-date">April 25 2018</p>
+
+        <div id="author-details">
+          <div id="author-pic"></div>
+          <a href="https://twitter.com/deora_aryan" target="_blank"><div id="author-handle"></div></a>
+        </div>
+        <img src="../img/illustrator.svg" alt="Vector graphic of a pascal's triangle" id="work-photo" class="modal-compatible image">
+
+        <h3 class="heading">First OOP Class</h3>
+        <p class="body">
+          CSCI-212: Introduction to Object-Oriented Programming was my first exposure to Java. Over the course of 4 months, our class was introduced to the 4 paradigms (<a href="https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)" class="article-link" target="_blank">Encapsulation</a>, <a href="https://en.wikipedia.org/wiki/Abstraction_(computer_science)" class="article-link" target="_blank">Abstraction</a>, <a href="https://en.wikipedia.org/wiki/Polymorphism_(computer_science)" class="article-link" target="_blank"> Polymorphism </a> and <a href="https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)" class="article-link" target="_blank"> Inheritance </a> ) of Object-Oriented Programming. For me, Java had a steep learning curve, but by the end of the semester, I grew to love the language. It was well structured and strongly object-oriented; a drastic change from the languages I had learned before (Racket, Lisp).
+          <br><br>
+          This class was intense. It had weekly coding projects, quizzes and assignments but I enjoyed every part of it. It was the first time I realized that my fear of failing to learn programming languages was irrational. I used to think that one needs to be a gifted genius to learn how to code. The weekly projects helped me understand that programming is akin to solving puzzles. I used to sit for hours looking at the assignments, trying to figure out each part until it clicked. The joy it felt to run the code without any errors was truly satisfying.
+          <br><br>
+          The last section of this class was the final project which required students to create a Point of Sale System for a restaurant. A short client brief was provided to us listing the components that the restaurant system required.
+        </p>
+
+        <h3 class="heading">Client Brief</h3>
+        <p class="body">
+          You are hired to create a project that will mimic a Point of Sale System that a restaurant will use to enter their orders. These systems are used for their kitchen staff to receive the order and handle payments. This system will keep track of all the information necessary for the server to select the entrees and sides that the customers at a table will order. It will also offer a payment method. The System can be boiled down into 3 Perspectives.
+          <br><br>
+          <ul class="article-list">
+            <li><b class="bold">Server’s Perspective:</b> <br>The server should be able to log in with a unique User ID and password. The server should be able to create and manage multiple tables. Each table will be able to hold up to four customers. When a table is created and selected the server should be able to select an entrée option and two sides with it. Once the order is ready it can be sent to the kitchen (will display a confirmation notification).</li>
+            <li><b class="bold">Manager’s Perspective:</b> <br> A manager will be able register and login with a unique User ID and password. The manager can delete and add new servers to the system. The Manager should also be able to access each table on the System and provide discounts to any bill.</li>
+            <li><b class="bold">Payment Perspective:</b> <br> There should be a payment method where a customer can pay their bill. For each table a formatted receipt can be printed. Then an option to pay for the bill using cash or a phony credit card number with pin. The manager could perhaps use this perspective to apply the discount’s using their password.
+            </li>
+          </ul>
+        </p>
+
+        <h3 class="heading">Software Development</h3>
+        <p class="body"> 
+          This section was my favorite part of the class. I had absolute independence in designing the software. I used Adobe Xd to create a simple user story that would show the steps a waiter would have to take to reserve a table, place orders and finally, create a customer invoice. While designing the user interface, I would constantly think about the code I would have to write to create those features. That is when I learned how to decide what classes to create and how to structure their flow. After designing and re-designing numerous <a href="https://en.wikipedia.org/wiki/Abstraction_(computer_science)" class="article-link" target="_blank">UML Diagrams</a> and endless nights of coding, here are the pictures of the final product:
+        </p>
+
+      </div>
+    </div>
+
+    <footer>
+      <p id="footer-heading">Made By Aryan Deora</p>
+      <p id="brand-icon-holder"> <i class="fab fa-github"></i> <i class="fab fa-linkedin-in"></i> <i class="fab fa-twitter"></i> <i class="fas fa-envelope"></i></p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.min.js"></script>
+    <script type="text/javascript" src="js/navbar.js"></script>
+    <script type="text/javascript" src="js/image-modal.js"></script>
+  </body>
+</html>

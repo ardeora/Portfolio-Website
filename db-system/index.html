@@ -69,42 +69,53 @@
 
         <h3 class="heading">Introduction To Database Systems</h3>
         <p class="body">
-          BUS-S307: Data Management was one of my first Information Systems major classes. The class began with an introduction to database environments and management systems.
-          The first half of the class was devoted to learning how to structure a database. We were taught how to create <a href="https://en.wikipedia.org/wiki/Enhanced_entity%E2%80%93relationship_model" class="article-link" target="_blank">Enhanced ER Models</a>. We also learned logical database design as well
+          BUS-S307: Data Management was one of my first Information Systems major classes. The class began with an introduction to database environments and it's development process.
+          The first half of the class was devoted to learning how to structure a database. We were taught how to create <a href="https://en.wikipedia.org/wiki/Enhanced_entity%E2%80%93relationship_model" class="article-link" target="_blank">Enhanced Entity-Relationship Models</a>. We also learned logical database design and the <a href="https://en.wikipedia.org/wiki/Relational_model" class="article-link" target="_blank">relational model</a> by systematically structuring data. Assignments and projects revolved around designing a physical database model and <a href="https://www.javatpoint.com/dbms-normalization" class="article-link" target="_blank">normalizing</a> the relation tables to the 3rd Normal Form.
+          <br> <br>
+          The latter half of the class was spent learning how to write SQL code in the Oracle database environment. It started with basic create, read, update and delete (<a href="https://en.wikipedia.org/wiki/Create,_read,_update_and_delete" class="article-link" target="_blank">CRUD</a>) operations where we learned how to create and alter tables and it's fields. Later, we dove deeper into SQL development by learning how to create complex queries to retrieve data from the database. The class ended with a final group project.
         </p>
 
-        <h3 class="heading">Client Brief</h3>
+        <h3 class="heading">Final Group Project</h3>
         <p class="body">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam impedit consequuntur, saepe exercitationem fugiat dolorem eos blanditiis, deserunt velit laudantium rem praesentium iure nobis dolor quibusdam sunt. Natus, eius inventore?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam impedit consequuntur, saepe exercitationem fugiat dolorem eos blanditiis, deserunt velit laudantium rem praesentium iure nobis dolor quibusdam sunt. Natus, eius inventore?
+          The brief for the final project instructed teams to design a database for a business or office. We began the project by assuming the role of a designer and brain-stormed all the features, and processes that our team would like to include in our application as well as the determine the end-user of the software. Our team decided that we would create a database system for an airline (Air America). We also agreed that the software application would be used by the ground staff at different airports to search customer bookings, flight schedule, missing baggages and place aircraft maintenance requests.
         </p>
 
         <h3 class="heading">Software Development</h3>
         <p class="body"> 
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam impedit consequuntur, saepe exercitationem fugiat dolorem eos blanditiis, deserunt velit laudantium rem praesentium iure nobis dolor quibusdam sunt. Natus, eius inventore?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam impedit consequuntur, saepe exercitationem fugiat dolorem eos blanditiis, deserunt velit laudantium rem praesentium iure nobis dolor quibusdam sunt. Natus, eius inventore?
+          The first step to create the application was to create a detailed ER model of the database we would be pulling and posting data from. Initially, it was a huge challenge to decide what entities should be a part of the diagram. Slowly, our team learned that it would be easier to create small user stories which would guide us through the process of retrieving or posting information. For example, to see the flight schedule, the ground staff attendant would either have to enter a date and/or a unique flight number to see the schedule of the flights taking off from a given airport. Once the user story was decided upon, we then designed an ER model that would help us get that data from the database. We continued this process for the rest of the features of the application. Here is the final ER Model that our team created in order to create our software:
+
+          <img src="img/er-model.png" alt="ER Model Of The Software" class="modal-compatible image screenshot">
+          <p class="image-caption">Entity-Relationship Model Of The Software</p>
         </p>
 
-        <img src="img/preview.png" alt="Home page of the software" class="modal-compatible image screenshot">
-        <p class="image-caption">Home page of the software</p>
+        <p class="body"> 
+          Once the the Entity-Relationship model was finalized, we used the the diagram to build a logical design. Our group created a relational model that was normalized to the 3rd Normal Form so that our program could operate efficiently without sacrificing performance.
+
+          <br> <br>
+
+          The next step was to create a dummy database on Microsoft Access with dummy data to check if something wasn't working. We also created the queries needed to retrieve data from the database. Once everything was working, we created a wireframe of the user-interface for our application. All the image assets were created using the Adobe Creative Cloud of software. Finally, we programmed a Visual Basic Application in Visual Studio that incorporated all the features that we had planned for. Here are some screenshots from the live application.
+        </p>
+
+        <img src="img/preview.png" alt="Initial prototype of the application" class="modal-compatible image screenshot">
+        <p class="image-caption">Initial prototype of the application</p>
         <img src="img/login-page.png" alt="Photo of the login page" class="modal-compatible image screenshot">
-        <p class="image-caption">Log-In Page for Servers</p>
-        <img src="img/dashboard.png" alt="A view of tables available at the restaurant" class="modal-compatible image screenshot">
-        <p class="image-caption">Red tables are already reserved. Yellow tables are being served by other waiters. Green tables are still available to customers.</p>
-        <img src="img/customer-roster.png" alt="Menu for selecting entrees" class="modal-compatible image screenshot">
-        <p class="image-caption">Menu for selecting entrees</p>
-        <img src="img/customer-roster-report.png" alt="Menu for selecting sides" class="modal-compatible image screenshot">
-        <p class="image-caption">Menu for selecting sides</p>
-        <img src="img/flight-schedule.png" alt="Checkout page with order summary" class="modal-compatible image screenshot">
-        <p class="image-caption">Checkout page with order summary</p>
-        <img src="img/flight-schedule-report.png" alt="Manager view when they are logged in" class="modal-compatible image screenshot">
-        <p class="image-caption">Managers can add, delete or edit servers in the database</p>
-        <img src="img/missing-baggage.png" alt="Checkout page with order summary" class="modal-compatible image screenshot">
-        <p class="image-caption">Checkout page with order summary</p>
-        <img src="img/missing-baggage-report.png" alt="Manager view when they are logged in" class="modal-compatible image screenshot">
-        <p class="image-caption">Managers can add, delete or edit servers in the database</p>
-        <img src="img/maintenance-page.PNG" alt="Manager view when they are logged in" class="modal-compatible image screenshot">
-        <p class="image-caption">Managers can add, delete or edit servers in the database</p>
+        <p class="image-caption">Log-In Page for airline ground staff</p>
+        <img src="img/dashboard.png" alt="Software Dashboard" class="modal-compatible image screenshot">
+        <p class="image-caption">Dashboard of the application</p>
+        <img src="img/customer-roster.png" alt="Customer Roster Form" class="modal-compatible image screenshot">
+        <p class="image-caption">Customer Roster Form</p>
+        <img src="img/customer-roster-report.png" alt="Customer Roster Report" class="modal-compatible image screenshot">
+        <p class="image-caption">Customer Roster Report</p>
+        <img src="img/flight-schedule.png" alt="Flight schedule form" class="modal-compatible image screenshot">
+        <p class="image-caption">Flight schedule form</p>
+        <img src="img/flight-schedule-report.png" alt="Flight schedule report" class="modal-compatible image screenshot">
+        <p class="image-caption">Flight schedule report</p>
+        <img src="img/missing-baggage.png" alt="Missing baggage form" class="modal-compatible image screenshot">
+        <p class="image-caption">Missing baggage form</p>
+        <img src="img/missing-baggage-report.png" alt="Missing baggage report" class="modal-compatible image screenshot">
+        <p class="image-caption">Missing baggage report</p>  
+        <img src="img/maintenance-page.PNG" alt="Maintenance request form" class="modal-compatible image screenshot">
+        <p class="image-caption">Maintenance request form</p>
       </div>
     </div>
 
