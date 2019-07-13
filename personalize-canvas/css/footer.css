@@ -1,6 +1,6 @@
 footer {
   height: 100px;
-  background: #FFEFD0;
+  background: var(--accent-color);
   width: 100%;
   position: relative;
   padding-top: 30px;

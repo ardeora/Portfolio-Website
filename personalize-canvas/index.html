@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Aryan Deora | Personalize Canvas</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/image-modal.css">
+    <link rel="stylesheet" href="css/master.css">
+    <!-- <link rel="stylesheet" href="css/recentwork.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Product+Sans:100,300,400,500,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700,700i,900,900i|Noto+Sans" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="../../img/favicon.png">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  </head>
+  <body>
+
+    <div id="image-modal-container" class="modal-hidden">
+      <div id="image-modal-content">
+        <button type="button" name="modal-close" id="modal-close-btn">&times;</button>
+        <img id="modal-image">
+      </div>
+    </div>
+
+    <nav>
+      <div id="nav-icon1">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div id="nav-name"> <a href="../">Aryan Deora</a></div>
+      <div class="menu">
+        <ul id="nav-ul">
+          <li class="nav-list-element"><a href="../">Home</a></li>
+          <li class="nav-list-element"><a href="#">Resume</a></li>
+          <li class="nav-list-element"><a href="#">About</a></li>
+          <li class="nav-list-element"><a href="#">Contact</a></li>
+        </ul>
+     </div>
+    </nav>
+
+    <div id="article">
+      <div id="content-wrapper">
+        <p id="work-type">PROJECT</p>
+        <h1 id="work-title">Personalize Canvas</h1>
+        <p id="work-date">February 12 2019</p>
+
+        <div id="author-details">
+          <div id="author-pic"></div>
+          <a href="https://twitter.com/deora_aryan" target="_blank"><div id="author-handle"></div></a>
+        </div>
+        <img src="../img/p-canvas.svg" alt="Vector graphic of a pascal's triangle" id="work-photo" class="modal-compatible image">
+
+        <div id="tools-used-wrapper">
+          <h2>TOOLS USED</h2>
+          <ul id='tools-used'>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+        <a class="github-link" target="_blank" href="https://github.com/ardeora/Point-Of-Sale-System"><i class="fab fa-github g-link"></i> Github</a>
+
+        <h3 class="heading">Canvas</h3>
+        <p class="body">
+          Indiana University's classes use a learning management system (LMS) called Canvas which is an application offered by a company called Instructure. Instructure offers LMS services for over 300 educational institutions in the USA.
+          <br> <br>
+          Here at my school, the canvas website is an essential tool for each student. All online assignment submissions, discussion posts as well as professor announcements are made on the canvas course page. Students spend a lot of time working on weekly quizzes and assignments on the website itself.
+        </p>
+
+        <img src="img/canvas-light.png" alt="Canvas Homepage" class="modal-compatible image screenshot">
+        <p class="image-caption">Canvas Dashboard Page</p>
+
+        <img src="img/canvas-course-light.png" alt="Canvas Course Page" class="modal-compatible image screenshot">
+        <p class="image-caption">Canvas Course Page</p>
+
+        <h3 class="heading">No Dark Mode :(</h3>
+        <p class="body">
+          Working on assignments late at night became an unpleasant experience when the white background blasted through my laptop. I searched online for any resources to change the background of my course page but instead I found others suffering from the same problem.
+        </p>
+
+        <img src="img/canvas-forum.png" alt="Canvas Forum Page" class="modal-compatible image screenshot">
+        <p class="image-caption">Canvas Forum Page</p>
+
+        <p class="body">
+          Canvas has a community forum where students can propose any features they would like to see on the website. Numerous students wanted a dark theme for canvas that would let them work on the site late at night too without hurting their eyes.
+        </p>
+
+        <h3 class="heading">Solution :)</h3>
+        <p class="body">
+          Since the people at Instructure would take time to implement this feature, I was too impatient to wait. I watched Daniel Shiffman's 'How to make a Google Chrome Extension' tutorial to make a small app for my browser. Here are the results.
+        </p>
+
+      </div>
+    </div>
+
+    <footer>
+      <p id="footer-heading">Made By Aryan Deora</p>
+      <p id="brand-icon-holder"> <i class="fab fa-github"></i> <i class="fab fa-linkedin-in"></i> <i class="fab fa-twitter"></i> <i class="fas fa-envelope"></i></p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.min.js"></script>
+    <script type="text/javascript" src="js/navbar.js"></script>
+    <script type="text/javascript" src="js/image-modal.js"></script>
+  </body>
+</html>

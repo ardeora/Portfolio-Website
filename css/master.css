@@ -1,3 +1,7 @@
+:root {
+  --background-dark: #0e0e0e;
+  --background-light: #ececec;
+}
 
 ::-webkit-scrollbar {
   width: 12px;
@@ -14,7 +18,7 @@
   font-family: Product Sans, Arial;
   margin: 0;
   padding: 0;
-  color: black;
+  color: #0e0e0e;
   box-sizing: border-box;
 }
 
@@ -24,6 +28,6 @@
 }
 
 body {
-  background-color: #ECECEC;
+  background-color: #ececec;
   /* height: 9000px; */
 }

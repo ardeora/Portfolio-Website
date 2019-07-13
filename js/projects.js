@@ -96,7 +96,11 @@ setCardWidth(jQuery(window).width());
 setCardxPosition(jQuery(window).width(), cards);
 setCardyPosition(jQuery(window).width(), cards);
 
-
+setTimeout(() => {
+  setCardWidth(jQuery(window).width());
+  setCardxPosition(jQuery(window).width(), cards);
+  setCardyPosition(jQuery(window).width(), cards);
+}, 1000);
 
 window.addEventListener("resize", function(){
   setCardWidth(jQuery(window).width());

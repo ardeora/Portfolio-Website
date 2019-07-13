@@ -35,19 +35,16 @@
 }
 
 #desc h1 {
-  color: black;
   font-size: 38px;
 }
 
 #desc h2, h2 {
-  color: black;
   font-size: 24px;
   font-weight: normal;
   margin-bottom: 20px;
 }
 
 #desc h3 {
-  color: black;
   font-size: 18px;
   font-weight: normal;
   letter-spacing: 5px;
