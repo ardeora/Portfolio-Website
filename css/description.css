@@ -71,6 +71,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  cursor: pointer;
+  transition: background-image 0.5s;
 }
 
 @media(max-width: 750px) {

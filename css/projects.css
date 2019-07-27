@@ -5,6 +5,23 @@
 
 .project {
   position: absolute;
+  transition: 1s;
+}
+
+.dark-p {
+  background-color: var(--background-dark-accent);
+}
+
+.dark-p:hover {
+  background-color: var(--card-hover-dark);
+}
+
+.light-p {
+  background-color: var(--background-light);
+}
+
+.light-p:hover {
+  background-color: var(--card-hover-light);
 }
 
 #project-grid-container {
@@ -26,7 +43,7 @@
 
 #project-grid-container .project:hover{
   box-shadow: 0px 10px 20px rgba(95, 95, 95, 0.2);
-  background: #efefef;
+  /* background: var(--card-hover-light); */
   transition: 0.3s ease;
 }
 
@@ -82,7 +99,7 @@
 }
 
 #nodejs .project-pic {
-  height: 120px;
+  height: 150px;
   background-image: url("../img/icoreCase.svg");
 }
 
@@ -135,7 +152,8 @@
 }
 
 @media(max-width: 500px) {
-  #icore .project-pic {
+
+  /* #nodejs .project-pic {
     height: 200px;
   }
 
@@ -146,6 +164,10 @@
 
   #airline-database .project-pic {
     height: 200px;
+  } */
+
+  .project-pic {
+    height: 200px !important;;
   }
 
   #project-grid-container {

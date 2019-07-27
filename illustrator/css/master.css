@@ -283,14 +283,14 @@ body {
 }
 
 #sg-dashboard {
-  background-image: url("../img/sg-dashboard.png"); /* The image used */
+  background-image: url("../img/sg-dashboard.jpg"); /* The image used */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: contain;
 }
 
 #sg-leaderboard {
-  background-image: url("../img/sg-leaderboard.png"); /* The image used */
+  background-image: url("../img/sg-leaderboard.jpg"); /* The image used */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: contain;

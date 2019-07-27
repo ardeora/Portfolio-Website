@@ -44,7 +44,7 @@ function setCardyPosition(size,cardArray) {
         cardArray[i].style.top = '0';
       } else {
         let margin = 20;
-        console.log('entered');
+        // console.log('entered');
         let style = window.getComputedStyle(cardArray[i-3]);
         let top = style.getPropertyValue('top');
         top = top.substring(0, top.length - 2)
@@ -60,7 +60,7 @@ function setCardyPosition(size,cardArray) {
         cardArray[i].style.top = '0';
       } else {
         let margin = 16;
-        console.log('entered');
+        // console.log('entered');
         let style = window.getComputedStyle(cardArray[i-2]);
         let top = style.getPropertyValue('top');
         top = top.substring(0, top.length - 2)
@@ -76,7 +76,7 @@ function setCardyPosition(size,cardArray) {
         cardArray[i].style.top = '0';
       } else {
         let margin = 16;
-        console.log('entered');
+        // console.log('entered');
         let style = window.getComputedStyle(cardArray[i-1]);
         let top = style.getPropertyValue('top');
         top = top.substring(0, top.length - 2)
@@ -88,7 +88,7 @@ function setCardyPosition(size,cardArray) {
     }
   }
   let parentContainer = document.getElementById('project-grid-container');
-  console.log(highest);
+  // console.log(highest);
   parentContainer.style.height =  highest+'px'
 }
 
@@ -108,4 +108,4 @@ window.addEventListener("resize", function(){
   setCardyPosition(jQuery(window).width(), cards);
 }, true);
 
-console.log(cards);
+// console.log(cards);

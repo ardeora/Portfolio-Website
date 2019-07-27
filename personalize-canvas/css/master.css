@@ -205,6 +205,30 @@ body {
   cursor: pointer;
 }
 
+.sg-grid {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  display: grid;
+  height: 450px;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px 5px;
+}
+
+#sg-dashboard {
+  background-image: url("../img/pc-ui.png"); /* The image used */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: contain;
+}
+
+#sg-leaderboard {
+  background-image: url("../img/pc-ui2.png"); /* The image used */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: contain;
+}
+
 @media (max-width: 750px) {
   #article {
     width: 100%;

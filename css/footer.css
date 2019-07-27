@@ -1,13 +1,14 @@
 footer {
   height: 100px;
-  background: #D1D0D0;
+  
+  background: var(--background-light-accent);
   width: 100%;
   position: relative;
   padding-top: 30px;
 }
 
 #footer-heading {
-  color: #333333;
+  color:  var(--header-topic);;
   text-align: center;
 }
 

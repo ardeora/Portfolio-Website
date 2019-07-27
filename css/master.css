@@ -1,6 +1,13 @@
 :root {
-  --background-dark: #0e0e0e;
+  --background-dark: #1c1c2b;
+  --background-dark-accent: rgba(44, 47, 56, 0.7);
+  --background-dark-accent-s: rgb(44, 47, 56);
   --background-light: #ececec;
+  --background-light-accent: #D1D0D0;
+  --header-topic: #333333;
+  --nav-small-light: #D1D0D0;
+  --card-hover-dark: rgb(57, 60, 66, 0.7);
+  --card-hover-light: #efefef;
 }
 
 ::-webkit-scrollbar {
@@ -18,7 +25,7 @@
   font-family: Product Sans, Arial;
   margin: 0;
   padding: 0;
-  color: #0e0e0e;
+  color: var(--background-dark);
   box-sizing: border-box;
 }
 
@@ -28,6 +35,32 @@
 }
 
 body {
-  background-color: #ececec;
+  background-color: var(--background-light);
+  transition: background-color 1s;
   /* height: 9000px; */
 }
+
+/* svg {
+  height: 40px;;
+  width: 40px;
+  position: absolute;
+  top: 90%;
+  animation: rotate;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotate {
+  from {
+    top: 100%;
+    left: 200px;
+    transform: rotate(0deg);
+  }
+
+  to {
+    top: -40px;
+    left: 50%;
+    transform: rotate(360deg)
+  }
+} */

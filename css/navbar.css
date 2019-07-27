@@ -51,7 +51,7 @@ nav {
   cursor: pointer;
   text-decoration: none;
   font-size: 16px;
-  color: black;
+  /* color: var(--background-dark); */
 }
 /* Finished: NAVBAR STYLING */
 
@@ -78,7 +78,7 @@ nav {
   position: absolute;
   height: 3px;
   width: 100%;
-  background: black;
+  background: var(--background-dark);;
   border-radius: 50px;
   opacity: 1;
   left: 0;
@@ -139,11 +139,12 @@ nav {
   }
 
   .grey-bg {
-    background: #D1D0D0;
+    background: var(--background-light-accent);;
   }
+
   #nav-ul {
     max-height: 0;
-    background: #D1D0D0;
+    background: var(--background-light-accent);
     border-top: 50px;
   }
 
