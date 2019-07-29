@@ -191,6 +191,15 @@ body {
   color: #696e84;
 }
 
+.list li {
+  font-family: 'Noto Sans';
+}
+
+.list {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
 @media (max-width: 750px) {
   #article {
     width: 100%;

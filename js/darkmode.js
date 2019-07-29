@@ -1,6 +1,7 @@
 let illus = $('#illus');
 let toggle = true;
 
+
 let stString = '<style id="newSS">@media(max-width: 786px) { #nav-ul {background: var(--background-dark-accent-s);} .grey-bg {background: var(--background-dark-accent-s);} .nav-list-element:hover { background-color: #5E5E5F;}}</style>'
 
 let preload = new Image();
@@ -30,5 +31,4 @@ illus.on('click', function clickIllus() {
         toggle = true;
     }
 });
-
-
+// illus.click();
