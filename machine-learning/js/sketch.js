@@ -437,3 +437,156 @@ let sketch3 = function(p) {
 
 let s3 = new p5(sketch3);
 
+
+let sketch4 = function(p) {
+    let img;
+    
+
+    p.preload = function() {
+    img = p.loadImage('img/graph.png');
+    }
+
+    p.setup = function() {
+        let canvas = p.createCanvas(500,500);
+        canvas.parent('sketch4')
+        
+        p.background(img);
+        p.v0 = p.createVector(0, 0); 
+        p.w1 = p.createVector(p.getXC(1),p.getYC(1));
+        p.scale = p.createVector(2,-2);
+        p.w2 = p.createVector(p.getXC(0),p.getYC(0));
+        p.counter = 0;
+        
+        // p.start = p5.Vector.add(p.w1,p.w2);
+        // p.end = p5.Vector.add(p.w1,p.w2);
+
+        canvas.mouseOver(p.enter);
+        canvas.mouseOut(p.exit);
+        p.firstLoop = true;
+        p.noLoop();
+    }
+
+    p.enter = function() {
+        p.loop();
+    }
+
+    p.exit = function() {
+        p.w2.y = 0;
+        p.w1 = p.createVector(p.getXC(1),p.getYC(1));
+        p.counter = 0;
+        p.scale = p.createVector(2,-2);
+        p.noLoop();
+    }
+
+    p.draw = function() {
+        p.background(img);
+
+        p.w1.add(p.scale);
+        // p.end.add(p.scale);
+        if (p.w1.x > p.width/2 || p.w1.x < -p.width/2) {
+            p.scale.mult(-1);
+        }
+        p.dispText();
+        p.translate(p.width/2, p.height/2);
+        p.drawTraceLine(p.w2);
+        if (p.w2.x === 0 && p.w2.y === 0) {} else {
+            p.drawArrow(p.w1, p.w2, 'rgb(22,132,255)');
+        }
+        p.drawArrow(p.v0, p.w1, 'rgb(72,196,150)');
+        p.changeV();  
+    }
+    // draw an arrow for a vector at a given base position
+    p.drawArrow = function(base, vec, myColor) {
+        p.push();
+        p.stroke(myColor);
+        p.strokeWeight(3);
+        p.fill(myColor);
+        p.translate(base.x, base.y);
+        p.line(0, 0, vec.x, vec.y);
+        p.rotate(vec.heading());
+        let arrowSize = 6;
+        p.translate(vec.mag() - arrowSize, 0);
+        p.triangle(0, arrowSize / 2, 0, -arrowSize / 2, arrowSize, 0);
+        p.pop();
+    }
+
+    p.getXC = function(x) {
+        return x * 50;
+    }
+
+    p.getYC = function(y) {
+        return y * -50;
+    }
+
+    p.windowResized = function() {
+        if (targetDim < 500) {
+        p.resizeCanvas(targetDim, targetDim);
+        } else {
+        p.resizeCanvas(500, 500);  
+        }    
+    }
+
+    p.drawTraceLine = function(v) {
+        p.push();
+        p.stroke('rgba(227,148,74, 0.6)');
+        p.translate(v.x, v.y);
+        p.strokeWeight(3);
+        p.beginShape(p.LINES);
+        p.vertex(-1000, 1000);
+        p.vertex(1000, -1000);
+        p.endShape();
+        p.pop();
+    }
+
+    p.dispText = function (params) {
+        p.fill('rgb(22,132,255)');
+        p.textSize(16);
+        let str = `(${p.round(p.w2.x/50)} , ${p.round(-p.w2.y/50)})`
+        p.text(str, 20, 30);
+        p.fill('rgba(255, 255, 255, 0.8)');
+        let ref = p.createVector(p.getXC(1),p.getYC(1));
+        let mag = ref.mag();
+        let sign = '+'
+        if(p.w1.x < 0) {
+            sign = '-';
+        } else {
+            sign = '+';
+        }
+        p.text(`${sign} ${Math.round((p.w1.mag()/mag) * 100)/100}`, 70, 30);
+        console.log();
+        
+        p.fill('rgb(72,196,150)');
+        p.text('(1 , 1)', 120, 30);
+        
+    }
+
+    p.changeV = function(kcode) {
+        p.counter++;
+        if (p.counter >= 225 && p.counter < 355) {
+            p.w2.y -= 2;
+            p.start = p5.Vector.add(p.w1,p.w2);
+            p.end = p5.Vector.add(p.w1,p.w2);
+        } else if (p.counter >= 355 && p.counter < 605) {
+            p.w2.y += 2;
+            p.start = p5.Vector.add(p.w1,p.w2);
+            p.end = p5.Vector.add(p.w1,p.w2);
+        } else if (p.counter >= 605 && p.counter < 725) {
+            p.w2.y -= 2;
+            p.start = p5.Vector.add(p.w1,p.w2);
+            p.end = p5.Vector.add(p.w1,p.w2);
+        }
+
+        if (p.counter >= 732) {
+            p.counter = 225;
+        }
+
+        
+    }
+    
+}
+
+let s4 = new p5(sketch4);
+
+document.addEventListener('keydown', e => {
+    s4.changeV(e.keyCode);
+});

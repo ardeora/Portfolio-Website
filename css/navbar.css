@@ -78,7 +78,7 @@ nav {
   position: absolute;
   height: 3px;
   width: 100%;
-  background: var(--background-dark);;
+  background: var(--background-light);;
   border-radius: 50px;
   opacity: 1;
   left: 0;

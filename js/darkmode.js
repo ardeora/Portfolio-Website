@@ -1,5 +1,5 @@
 let illus = $('#illus');
-let toggle = true;
+let toggle = false;
 
 
 let stString = '<style id="newSS">@media(max-width: 786px) { #nav-ul {background: var(--background-dark-accent-s);} .grey-bg {background: var(--background-dark-accent-s);} .nav-list-element:hover { background-color: #5E5E5F;}}</style>'
@@ -12,7 +12,6 @@ illus.on('click', function clickIllus() {
         illus.css('background-image', 'url("../img/computer-dark.svg")');
         $('body').css('background-color', 'var(--background-dark)');
         $('*').css('color', 'var(--background-light)');
-        
         $('.project').addClass('dark-p');
         $('.project').removeClass('light-p');
         $('#nav-icon1 span').css('background', 'var(--background-light)');       
