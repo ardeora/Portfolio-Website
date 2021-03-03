@@ -1,6 +1,8 @@
 :root {
   --accent-color: #4e545c;
   --accent-dark: #252b30;
+  --accent-body: #1D2422;
+
 }
 
 ::-webkit-scrollbar {
@@ -52,6 +54,10 @@ video {
 }
 #content-wrapper {
 
+}
+
+#nav-ul.showing .nav-list-element:hover {
+  background: #778a7e !important;
 }
 
 #work-type {
