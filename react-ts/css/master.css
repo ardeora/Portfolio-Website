@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("https://aryandeora.com/fonts/SF-Pro-Display-Regular.otf") format("opentype");
+}
+
 :root {
   --accent-color: #2165BF;
   --accent-dark: #00305A;
