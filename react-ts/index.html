@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta property="og:image" content="https://aryandeora.com/og-img/react-ts.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1080">
+    <meta property="og:image:height" content="720">
+    <title>Aryan Deora | React + Typescript</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/image-modal.css">
+    <!-- <link rel="stylesheet" href="css/recentwork.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Product+Sans:100,300,400,500,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700,700i,900,900i|Noto+Sans" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="../../img/favicon.png">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+    <div id="image-modal-container" class="modal-hidden">
+      <div id="image-modal-content">
+        <button type="button" name="modal-close" id="modal-close-btn">&times;</button>
+        <img id="modal-image">
+      </div>
+    </div>
+
+    <nav>
+      <div id="nav-icon1">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+      <div id="nav-name"> <a href="/">Aryan Deora</a></div>
+      <div class="menu">
+          <ul id="nav-ul">
+          <li class="nav-list-element"><a href="/">Home</a></li>
+          <li class="nav-list-element"><a href="/about">About</a></li>
+          <li class="nav-list-element"><a href="/contact">Contact</a></li>
+          </ul>
+      </div>
+    </nav>
+
+    <div id="article">
+      <div id="content-wrapper">
+        <p id="work-type">PROJECT</p>
+        <h1 id="work-title">React + TypeScript</h1>
+        <p id="work-date">July 22 2019</p>
+
+        <div id="author-details">
+          <div id="author-pic"></div>
+          <a href="https://twitter.com/deora_aryan" target="_blank"><div id="author-handle"></div></a>
+        </div>
+        <img src="../img/react_ts_logo.svg" alt="Vector graphic of a computer with TensorFlow's logo on the screen" id="work-photo" class="modal-compatible image">
+
+        <h3 class="heading">Love at first site</h3>
+        
+        <p style="margin-bottom: 20px;" class="body">As our organization moves away from old discontinued web frameworks like YUI and Model-Glue, adopting React for newer front-end projects was an obvious choice. For one of these projects I had to rewrite a single view app using React. The application is fairly simple. it visualizes real time circuit data for a bunch of our customer networks. It’s a convenient tool to detect if any circuits are down at any point in the day and it looks awesome on a big screen. I absolutely enjoyed learning React while rewriting this page. The official documentation is amazing and Dan Abramov’s explainer blogs are just..</p>
+        <img src="./img/chef_kiss.gif"  alt="Chef Kiss" class="modal-compatible image">
+        <p style="margin-bottom: 20px;" class="body">I love the framework because it flows so nicely. The DOM elements are in close proximity with their interactive logic and state which makes handling events easier by an order of magnitude. Here is a before and after of the webpage:</p>
+
+        <img src="./img/old_worldview.png"  alt="Old Worldview Portal" class="modal-compatible image">
+        <p class="image-caption">Old Worldview made using YUI and Model-Glue 🥶</p>
+        
+        <img src="./img/new_worldview.png"  alt="new Worldview Portal" class="modal-compatible image">
+        <p class="image-caption">New Worldview made with just ReactJS 🥳</p>
+
+        <h3 class="heading">Moving Forward</h3>
+        <p style="" class="body">I definitely want to improve on how I can manage state between components more efficiently. Looking at how well TypeScript works with React. It is time I finally start learning it in tandem with intermediate React concepts. For now, I will create some simple UI components from the ground up using TypeScript and React and eventually will start adding complexity by integrating state management libraries like Redux, MobX, etc.</p>
+
+        <h3 class="heading" style="margin-top: 50px;">Date-Picker Component</h3>
+        <p class="body">While rewriting worldview, I found out how difficult it is to get a consistent date-picker input across different browsers. Safari still doesn’t even have a native date picker input element for MacOS in 2021 😱. For worldview, I chose a third party react component package to quickly ship the new site to prod but I wanted to create a date picker myself. So here is my attempt at it. For state management, I just created a Calendar model class that keeps track of the current month in the view, the selected date and a list of Day objects that need to be shown in the current month’s view.</p>
+        <div class="light-body" id="date-picker-root"></div>
+        <p style="margin-top: 20px;" class="image-caption">Design Credits: <a href="https://dribbble.com/shots/14648967-Date-picker-Dona-app">Jakub Antalik on Dribbble</a></p>
+
+        <h3 class="heading" style="margin-top: 50px;">Coming Soon: Color-Picker Component</h3>
+        <!-- <h4 class="study-topic">Linear Algebra</h4>
+
+        <h4 class="sub-topic">Adding Vectors</h4> -->
+        
+      </div>
+    </div>
+
+    <footer>
+      <p id="footer-heading">Made By Aryan Deora</p>
+      <p id="brand-icon-holder"> 
+        <a href="http://www.github.com/ardeora" style="text-decoration: none;" target="_blank">
+          <i class="fab fa-github"></i>
+        </a> 
+        <a href="https://www.linkedin.com/in/aryandeora/" style="text-decoration: none;" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a> 
+        <a href="https://twitter.com/deora_aryan" style="text-decoration: none;" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>  
+        <a href="mailto:adeora@iu.edu" style="text-decoration: none;" target="_blank">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/p5.js"></script>
+    <script type="text/javascript" src="js/navbar.js"></script>
+    <script type="text/javascript" src="js/image-modal.js"></script>
+    <script type="text/javascript" src="js/date-picker.js"></script>
+
+  </body>
+</html>

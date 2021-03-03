@@ -1,0 +1,237 @@
+:root {
+  --accent-color: #2165BF;
+  --accent-dark: #00305A;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7EBCF2;
+  border-radius: 6px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-dark);
+  border-radius: 6px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+
+
+* {
+  font-family: Product Sans, Arial;
+  margin: 0;
+  padding: 0;
+  /* color: black; */
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #D5E7F2;
+}
+
+#article {
+  min-height: 1000px;
+  max-width: 745px;
+  background: #ECECEC;
+  margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgba(74, 150, 217, 0.2);
+  padding: 40px;
+  padding-bottom: 60px;
+}
+#content-wrapper {
+
+}
+
+#work-type {
+  font-family: 'Noto Sans';
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: var(--accent-color);
+}
+
+#work-title {
+  color: var(--accent-dark);
+  font-weight: 500;
+  margin-top: 5px;
+  font-size: 36px;
+}
+
+#work-date {
+  margin-top: 10px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #696e84;
+}
+
+#author-details {
+  height: 30px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+#author-pic {
+  width: 30px;
+  height: 100%;
+  display: inline-block;
+  background: #696e84;
+  background-image: url('../../img/AryanDeora.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 100px;
+}
+
+#author-handle{
+  width: 175px;
+  height: 100%;
+  display: inline-block;
+  background-image: url('../../img/twitterHandle.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+#work-photo {
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.sketch {
+  /* background: #2165BF; */
+  border-radius: 5px;
+  /* height: 500px; */
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 6px;
+}
+
+.sketch canvas {
+  border-radius: 5px;
+}
+
+
+.image {
+  box-shadow: 0px 3px 4px rgba(95, 95, 95, 0.3);
+  transition: 0.3s;
+  width: 100%;
+  cursor: pointer;
+}
+
+.image:hover {
+  box-shadow: 0px 10px 20px rgba(95, 95, 95, 0.2);
+}
+
+.heading {
+  font-size: 28px;
+  margin-top: 20px;
+}
+
+.study-topic {
+  font-size: 22px;
+  margin-top: 20px;
+}
+
+.sub-topic {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.body {
+  margin-top: 10px;
+  font-family: 'Noto Sans'
+}
+
+.sub-body {
+  margin-top: 5px;
+  font-size: 16px;
+  font-family: 'Noto Sans'
+}
+
+.legend {
+  margin-top: 30px;
+  text-align: center;
+  font-family: 'Noto Sans';
+  font-size: 14px;
+}
+
+.key {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50px;
+}
+
+.blue {
+  background: #1684ff;
+}
+
+.yellow {
+  background: #e3944a;
+}
+
+.green {
+  background: #48c496;
+}
+
+.image-caption {
+  display: block;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 14px;
+  margin-bottom: 30px;
+  color: #696e84;
+}
+
+.list li {
+  font-family: 'Noto Sans';
+}
+
+.list {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+#date-picker-root {
+  position: relative;
+  margin-top: 30px;
+  height: 640px;
+  border-radius: 12px;
+  transition: background 0.25s;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dark-body {
+  background: #1C1C1E;
+}
+
+.light-body {
+  background: #D6DAE0;
+}
+
+@media (max-width: 750px) {
+  #article {
+    width: 100%;
+    border-radius: 0px;
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  #article {
+    padding: 20px;
+    padding-bottom: 60px;
+  }
+}

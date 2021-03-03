@@ -74,6 +74,7 @@
   margin-right: 8px;
   font-family: 'Noto Sans';
   font-size: 12px;
+  position: relative;
 }
 
 .project-description {
@@ -93,14 +94,76 @@
   text-decoration: underline;
 }
 
+.project-status {
+  font-size: 10px;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.status-incomplete span {
+  background: #FBBF24;
+}
+
+.status-incomplete {
+  color: #FBBF24;
+}
+
+.status-active span {
+  background: #34D399;
+  animation-name: blink;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.status-active {
+  color: #34D399;
+}
+
+@keyframes blink {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
+.status-complete span {
+  background: #60A5FA;
+}
+
+.status-complete {
+  color: #60A5FA;
+}
+
+.status-wip span {
+  background: #A78BFA;
+}
+
+.status-wip {
+  color: #A78BFA;
+}
+
+
+.status-flag {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  line-height: 17px;
+}
+
+#react-ts .project-pic {
+  height: 160px;
+  background-image: url("../img/react_ts_logo.svg");
+}
+
 #ml-challenge .project-pic {
   height: 220px;
   background-image: url("../img/ml-challenge.svg");
 }
 
-#nodejs .project-pic {
-  height: 150px;
-  background-image: url("../img/icoreCase.svg");
+#globalnoc .project-pic {
+  height: 190px;
+  background-image: url("../img/globalnoc_logo.svg");
 }
 
 #personalize-canvas .project-pic {
