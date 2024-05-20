@@ -23,7 +23,13 @@ export const Banner = () => {
       const difference = 960 - windowWidth;
       const blob = splineApp.findObjectByName("Blob");
       if (blob) {
-        if (windowWidth < 550) {
+        if (windowWidth < 480) {
+          blob.scale.x = 0.7;
+          blob.scale.y = 0.22;
+          blob.scale.z = 0.1;
+          blob.position.x = -360;
+          blob.position.y = -3.31;
+        } else if (windowWidth < 550) {
           blob.scale.x = 0.5;
           blob.scale.y = 0.5;
           blob.scale.z = 0.5;
@@ -77,10 +83,22 @@ export const Banner = () => {
 
       const byline = splineApp.findObjectByName("Byline");
       if (byline) {
-        if (windowWidth < 550) {
+        if (windowWidth < 480) {
+          byline.scale.x = 0.7;
+          byline.scale.y = 0.7;
+          byline.scale.z = 0.7;
+          byline.position.x = -241.09 - 72;
+          byline.position.y = -13.49 + 56;
+        } else if (windowWidth < 550) {
+          byline.scale.x = 1;
+          byline.scale.y = 1;
+          byline.scale.z = 1;
           byline.position.x = -241.09 - 8;
           byline.position.y = -13.49 + 16;
         } else {
+          byline.scale.x = 1;
+          byline.scale.y = 1;
+          byline.scale.z = 1;
           byline.position.x = -241.09;
           byline.position.y = -13.49;
         }
@@ -88,7 +106,10 @@ export const Banner = () => {
 
       const title = splineApp.findObjectByName("Title");
       if (title) {
-        if (windowWidth < 550) {
+        if (windowWidth < 480) {
+          title.position.x = -366.14 - 8;
+          title.position.y = -138.74 + 76;
+        } else if (windowWidth < 550) {
           title.position.x = -366.14 - 8;
           title.position.y = -138.74 + 16;
         } else {
@@ -116,7 +137,7 @@ export const Banner = () => {
   return (
     <>
       <div
-        className={`flex box-border min-h-[376px overflow-hidden ${sceneSpecificClass}`}
+        className={`flex box-content h-[376px] overflow-hidden ${sceneSpecificClass}`}
       >
         <Spline
           className="!w-auto"
