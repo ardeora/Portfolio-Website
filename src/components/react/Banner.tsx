@@ -6,7 +6,7 @@ export const Banner = () => {
     <div className="flex justify-center pt-12 pb-10 min-h-[464px]">
       <Spline
         className="!w-auto"
-        scene="/spline/portfolio_banner_light.spline"
+        scene="/spline/portfolio_banner_light.splinecode"
       />
     </div>
   );
