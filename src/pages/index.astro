@@ -1,6 +1,6 @@
 ---
 import { Banner } from "../components/react/Banner";
-
+import LoadFonts from "../components/astro/load-fonts.astro";
 
 ---
 
@@ -29,9 +29,11 @@ import { Banner } from "../components/react/Banner";
 		<meta name="twitter:description" content="Software and UI Engineer">
 		<meta name="twitter:image" content="https://aryandeora.com/og-home.jpg">
 
+		<LoadFonts />
+
 	</head>
 	<body class="bg-light-50">
-		<Banner client:only />
+		<Banner client:only="react" />
 		<h1 class="sr-only">Aryan Deora</h1>
 		<h2 class="sr-only">Software and UI Engineer</h2>
 	</body>

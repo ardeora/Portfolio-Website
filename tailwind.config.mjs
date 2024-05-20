@@ -21,6 +21,9 @@ export default {
       screens: {
         xs: "480px",
       },
+      fontFamily: {
+        editorial: ["PPEditorialNew", "sans-serif"],
+      },
     },
   },
   plugins: [],
