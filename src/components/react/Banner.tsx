@@ -23,7 +23,6 @@ export const Banner = () => {
       const difference = 960 - windowWidth;
       const blob = splineApp.findObjectByName("Blob");
       if (blob) {
-        console.log(blob.position);
         if (windowWidth < 550) {
           blob.scale.x = 0.5;
           blob.scale.y = 0.5;
