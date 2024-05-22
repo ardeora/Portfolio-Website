@@ -19,6 +19,7 @@ export default {
         },
       },
       screens: {
+        lg: "960px",
         xs: "480px",
       },
       fontFamily: {
