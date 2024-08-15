@@ -137,7 +137,10 @@ export const Banner = () => {
   return (
     <>
       <div
-        className={`flex box-content h-[376px] overflow-hidden ${sceneSpecificClass}`}
+        className={`flex box-content overflow-hidden ${sceneSpecificClass}`}
+        style={{
+          height: "376px",
+        }}
       >
         <Spline
           className="!w-auto"
