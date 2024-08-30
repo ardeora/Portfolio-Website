@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Load fonts from the public/fonts directory */
+@font-face {
+  font-family: "PPEditorial";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/editorial/regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "PPEditorial";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/fonts/editorial/ultrabold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "PPEditorial";
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("/fonts/editorial/ultralight.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "DailyShine";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/daily-shine/regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "LWJ";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/lwj/regular.woff2") format("woff2");
+}
+
+.gradient-grid-provider {
+  --foo: -1320px;
+}
+
+@media screen and (max-width: 640px) {
+  .gradient-grid-provider {
+    --foo: -1500px;
+  }
+}
+
+.gradient-grid {
+  --mask-image: url("/imgs/radial-center.png");
+  mask-image: var(--mask-image);
+  mask-repeat: no-repeat;
+  mask-size: 1920px 1920px;
+  mask-position: 0% var(--foo);
+  /* mask-size: 100%;
+  
+  mask-position: 0px 0px; */
+}
+
+/* lwj: {
+          1: "#D459AB",
+          2: "#FF8266",
+          3: "#FFDE38",
+          4: "#A1FCA6",
+          5: "#A8FFFB",
+        }, */
+.lwj-container {
+  /* Add linear gradient to the background */
+  background: linear-gradient(
+    to right,
+    #d459ab,
+    #ff8266,
+    #ffde38,
+    #a1fca6,
+    #a8fffb
+  );
+}
+
+.lwj-text {
+  /* // Add text gradient */
+  background: linear-gradient(
+    to right,
+    #d459ab,
+    #ff8266,
+    #ffde38,
+    #a1fca6,
+    #a8fffb
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
