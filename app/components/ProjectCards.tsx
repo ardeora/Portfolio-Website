@@ -1,43 +1,50 @@
 import { ReactNode, useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "@remix-run/react";
 
 const TanStackDevtools = () => {
   return (
-    <div className="rounded-md border border-neutral-800 bg-neutral-900/80 p-2">
+    <a
+      href="https://www.npmjs.com/package/@tanstack/query-devtools"
+      target="_blank"
+      className="rounded-md border border-neutral-800 bg-neutral-900/80 p-2 transition-transform hover:scale-[1.005] hover:bg-neutral-900"
+    >
       <div className="relative h-64 overflow-hidden rounded border border-neutral-800 bg-neutral-950">
         <img
-          src="/imgs/bg.png"
+          src="/imgs/projects/devtools_bg.webp"
           alt="Placeholder"
           className="absolute inset-0 h-full w-full object-cover"
         />
         <div className="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/20 bg-black/20 p-1.5 backdrop-blur">
           <img
-            src="/imgs/tanstack.png"
+            src="/imgs/projects/tanstack_logo.webp"
             alt="Placeholder"
             className="h-18 w-18"
           />
         </div>
       </div>
-      <div className="px-1 pt-4 font-editorial text-2xl">TanStack DevTools</div>
+      <div className="px-1 pt-4 font-editorial text-2xl">
+        <span className="hover:underline">TanStack DevTools</span>
+      </div>
       <div className="flex px-1 text-sm uppercase text-neutral-400">
         Open Source
       </div>
-      <div className="flex px-1 pt-2 text-sm text-neutral-400">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, corrupti
-        rem. Commodi iure optio incidunt asperiores eius porro molestiae nostrum
-        culpa ea doloremque possimus pariatur modi, deserunt accusantium sit
-        neque?
+      <div className="flex px-1 pb-1 pt-2 text-sm text-neutral-400">
+        Redesigned the devtools for Tanstack Query, making them
+        framework-agnostic using SolidJS! Now, the same devtools work seamlessly
+        with React Query, Vue Query, Solid Query, Svelte, and Angular Query. All
+        powered by a single SolidJS core.
       </div>
-    </div>
+    </a>
   );
 };
 
 const Bollywordle = () => {
   return (
-    <div className="rounded-md border border-neutral-800 bg-neutral-900/80 p-2">
+    <div className="rounded-md border border-neutral-800 bg-neutral-900/80 p-2 transition-transform hover:scale-[1.005] hover:bg-neutral-900">
       <div className="relative h-52 overflow-hidden rounded border border-neutral-800 bg-neutral-950">
         <img
-          src="/imgs/bg_5.png"
+          src="/imgs/projects/bollywordle_bg.webp"
           alt="Placeholder"
           className="absolute inset-0 h-full w-full object-cover"
         />
@@ -49,11 +56,8 @@ const Bollywordle = () => {
       <div className="flex px-1 text-sm uppercase text-neutral-400">
         Coming Soon
       </div>
-      <div className="flex px-1 pt-2 text-sm text-neutral-400">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, corrupti
-        rem. Commodi iure optio incidunt asperiores eius porro molestiae nostrum
-        culpa ea doloremque possimus pariatur modi, deserunt accusantium sit
-        neque?
+      <div className="flex px-1 pb-1 pt-2 text-sm text-neutral-400">
+        A Bollywood song guessing game, inspired by Wordle. Coming soon!
       </div>
     </div>
   );
@@ -61,94 +65,124 @@ const Bollywordle = () => {
 
 const SolidToast = () => {
   return (
-    <div className="rounded-md border border-neutral-800 bg-neutral-900/80 p-2">
+    <a
+      href="https://solid-toast.com"
+      target="_blank"
+      className="rounded-md border border-neutral-800 bg-neutral-900/80 p-2 transition-transform hover:scale-[1.005] hover:bg-neutral-900"
+    >
       <div className="relative h-52 overflow-hidden rounded border border-neutral-800 bg-neutral-950">
         <img
-          src="/imgs/bg_4.png"
+          src="/imgs/projects/solid_toast_bg.webp"
           alt="Placeholder"
           className="absolute inset-0 h-full w-full object-cover"
         />
         <div className="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 rounded-md border border-white/50 bg-white/20 p-2 pl-2.5 backdrop-blur-md">
-          <img src="/imgs/toast.png" alt="Placeholder" className="w-16" />
+          <img
+            src="/imgs/projects/solid_toast_logo.webp"
+            alt="Placeholder"
+            className="w-16"
+          />
         </div>
       </div>
-      <div className="px-1 pt-4 font-editorial text-2xl">Solid Toast</div>
+      <div className="px-1 pt-4 font-editorial text-2xl">
+        <span className="hover:underline">Solid Toast</span>
+      </div>
       <div className="flex px-1 text-sm uppercase text-neutral-400">
         Open Source
       </div>
-      <div className="flex px-1 pt-2 text-sm text-neutral-400">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, corrupti
-        rem. Commodi iure optio incidunt asperiores eius porro molestiae nostrum
-        culpa ea doloremque possimus pariatur modi, deserunt accusantium sit
-        neque?
+      <div className="flex px-1 pb-1 pt-2 text-sm text-neutral-400">
+        A lightweight, easy-to-use library for adding customizable toast
+        notifications to your SolidJS apps. With a tiny bundle size and
+        ready-to-use default toasts, it's perfect for getting users up and
+        running fast!
       </div>
-    </div>
+    </a>
   );
 };
 
 const TanstackSolidQuery = () => {
   return (
-    <div className="rounded-md border border-neutral-800 bg-neutral-900/80 p-2">
+    <a
+      href="https://www.npmjs.com/package/@tanstack/solid-query"
+      target="_blank"
+      className="rounded-md border border-neutral-800 bg-neutral-900/80 p-2 transition-transform hover:scale-[1.005] hover:bg-neutral-900"
+    >
       <div className="relative h-56 overflow-hidden rounded border border-neutral-800 bg-neutral-950">
         <img
-          src="/imgs/bg_6.png"
+          src="/imgs/projects/solid_query_bg.webp"
           alt="Placeholder"
           className="absolute inset-0 h-full w-full object-cover"
         />
         <div className="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 rounded-md border border-white/20 bg-blue-50/10 p-1.5 contrast-125 backdrop-blur">
-          <img src="/imgs/solid.png" alt="Placeholder" className="w-16" />
+          <img
+            src="/imgs/projects/solid_js_logo.webp"
+            alt="Placeholder"
+            className="w-16"
+          />
         </div>
       </div>
       <div className="px-1 pt-4 font-editorial text-2xl">
-        TanStack Solid Query
+        <span className="hover:underline">TanStack Solid Query</span>
       </div>
       <div className="flex px-1 text-sm uppercase text-neutral-400">
         Open Source
       </div>
-      <div className="flex px-1 pt-2 text-sm text-neutral-400">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, corrupti
-        rem. Commodi iure optio incidunt asperiores eius porro molestiae nostrum
-        culpa ea doloremque possimus pariatur modi, deserunt accusantium sit
-        neque?
+      <div className="flex px-1 pb-1 pt-2 text-sm text-neutral-400">
+        Developed and maintain Solid Query, the SolidJS version of Tanstack
+        Query, a powerful async state manager for handling API queries and async
+        functions. Solid Query runs isomorphically, meaning it works seamlessly
+        on both the server and client — enabling server-side rendering on first
+        load and fast future navigations with cached data.
       </div>
-    </div>
+    </a>
   );
 };
 
 const GlobalNOC = () => {
   return (
-    <div className="rounded-md border border-neutral-800 bg-neutral-900/80 p-2">
+    <Link
+      to="/resume"
+      className="rounded-md border border-neutral-800 bg-neutral-900/80 p-2 transition-transform hover:scale-[1.005] hover:bg-neutral-900"
+    >
       <div className="relative h-64 overflow-hidden rounded border border-neutral-800 bg-neutral-950">
-        {/* <TestClientOnly /> */}
         <img
-          src="/imgs/bg_2.png"
+          src="/imgs/projects/grnoc_bg.webp"
           alt="Placeholder"
           className="absolute inset-0 h-full w-full object-cover"
         />
         <div className="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 rounded-lg border border-white/20 bg-black/40 p-2 py-2.5 backdrop-blur">
-          <img src="/imgs/grnoc.png" alt="Placeholder" className="w-16" />
+          <img
+            src="/imgs/projects/grnoc_logo.webp"
+            alt="Placeholder"
+            className="w-16"
+          />
         </div>
       </div>
-      <div className="px-1 pt-4 font-editorial text-2xl">GlobalNOC</div>
+      <div className="px-1 pt-4 font-editorial text-2xl">
+        <span className="hover:underline">GlobalNOC</span>
+      </div>
       <div className="flex px-1 text-sm uppercase text-neutral-400">
         Full Time
       </div>
-      <div className="flex px-1 pt-2 text-sm text-neutral-400">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, corrupti
-        rem. Commodi iure optio incidunt asperiores eius porro molestiae nostrum
-        culpa ea doloremque possimus pariatur modi, deserunt accusantium sit
-        neque?
+      <div className="flex px-1 pb-1 pt-2 text-sm text-neutral-400">
+        Worked full-time as a full-stack engineer, focusing on frontend
+        technologies. Led the development of GlobalNOC's design system and
+        networking layer, creating high-performance, type-safe web applications.
       </div>
-    </div>
+    </Link>
   );
 };
 
 const LWJ = () => {
   return (
-    <div className="rounded-md border border-neutral-800 bg-neutral-900/80 p-2">
+    <a
+      href="https://www.youtube.com/watch?v=3Iz3D7cVi04"
+      target="_blank"
+      className="rounded-md border border-neutral-800 bg-neutral-900/80 p-2 transition-transform hover:scale-[1.005] hover:bg-neutral-900"
+    >
       <div className="relative h-52 overflow-hidden rounded border border-neutral-800 bg-neutral-950">
         <img
-          src="/imgs/bg_7.png"
+          src="/imgs/projects/lwj_bg.webp"
           alt="Placeholder"
           className="absolute inset-0 h-full w-full object-cover"
         />
@@ -159,18 +193,19 @@ const LWJ = () => {
         </div>
       </div>
       <div className="px-1 pt-4 font-editorial text-2xl">
-        Learn With Jason Show
+        <span className="hover:underline">Learn With Jason Show</span>
       </div>
       <div className="flex px-1 text-sm uppercase text-neutral-400">
         Interview
       </div>
-      <div className="flex px-1 pt-2 text-sm text-neutral-400">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, corrupti
-        rem. Commodi iure optio incidunt asperiores eius porro molestiae nostrum
-        culpa ea doloremque possimus pariatur modi, deserunt accusantium sit
-        neque?
+      <div className="flex px-1 pb-1 pt-2 text-sm text-neutral-400">
+        Had a fun chat with Jason Lengstorf on the Learn With Jason show,
+        demoing the magic of Astro Islands and the framework-agnostic core of
+        Tanstack Query. We built an app using React, SolidJS, Vue, and Svelte
+        components, all sharing the same query cache. API data was deduped
+        across all components, making updates super efficient and smooth.
       </div>
-    </div>
+    </a>
   );
 };
 

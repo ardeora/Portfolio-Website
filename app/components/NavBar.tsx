@@ -11,6 +11,7 @@ const NavBar = () => {
     "/about": "border-nav-2-900",
     "/blog": "border-nav-3-900",
     "/gallery": "border-nav-4-900",
+    "/resume": "border-nav-1-900",
   };
 
   const profileBorderColorMap = {
@@ -18,6 +19,7 @@ const NavBar = () => {
     "/about": "border-nav-2-800",
     "/blog": "border-nav-3-800",
     "/gallery": "border-nav-4-800",
+    "/resume": "border-nav-1-800",
   };
 
   type BorderColor = keyof typeof borderColorMap;
@@ -31,13 +33,13 @@ const NavBar = () => {
               profileBorderColorMap[path as BorderColor]
             } `}
           >
-            <a aria-label="Home" className="pointer-events-auto" href="/">
+            <NavLink aria-label="Home" className="pointer-events-auto" to="/">
               <img
                 className="h-7 w-7 rounded-full"
                 src="https://avatars.githubusercontent.com/u/45807386?v=4"
                 alt="Avatar"
               />
-            </a>
+            </NavLink>
           </div>
 
           <nav

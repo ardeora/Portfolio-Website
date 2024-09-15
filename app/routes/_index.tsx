@@ -18,9 +18,9 @@ export default function Index() {
     <div className="mx-auto flex max-w-6xl flex-col text-neutral-300">
       <BannerClientOnly />
 
-      <div className="mt-24 px-6 pb-40">
+      <div className="mt-24 px-6 pb-36">
         <div className="text-center text-lg uppercase text-neutral-400">
-          Projects
+          Selected Work
         </div>
 
         <ProjectCards />

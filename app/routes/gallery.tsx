@@ -9,7 +9,7 @@ export const meta: MetaFunction = () => {
 
 export default function Contact() {
   return (
-    <div className="mt-8 h-[0px]">
+    <div className="mt-8 flex-1">
       <div>Contact</div>
     </div>
   );

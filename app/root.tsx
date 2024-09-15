@@ -13,6 +13,7 @@ import {
   SplineAnimatedContext,
 } from "./components/Spline";
 import { useState } from "react";
+import Footer from "./components/Footer";
 
 export function Layout({ children }: { children: React.ReactNode }) {
   const [animated, setAnimated] = useState(false);
@@ -25,7 +26,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
         <Links />
-        <link rel="icon" href="/imgs/favicon.png" />
+        <link rel="icon" href="/imgs/favicon.webp" />
         <script src="https://cdn.jsdelivr.net/npm/p5@1.9.4/lib/p5.js"></script>
 
         <link
@@ -52,22 +53,25 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </head>
       <body className="w-full overflow-x-hidden bg-neutral-950">
         <BgGrid />
-        <NavBar />
-        <SmallSplineAnimatedContext.Provider
-          value={{
-            animated: animatedSmall,
-            setAnimated: setAnimatedSmall,
-          }}
-        >
-          <SplineAnimatedContext.Provider
+        <div className="flex min-h-screen flex-col">
+          <NavBar />
+          <SmallSplineAnimatedContext.Provider
             value={{
-              animated,
-              setAnimated,
+              animated: animatedSmall,
+              setAnimated: setAnimatedSmall,
             }}
           >
-            {children}
-          </SplineAnimatedContext.Provider>
-        </SmallSplineAnimatedContext.Provider>
+            <SplineAnimatedContext.Provider
+              value={{
+                animated,
+                setAnimated,
+              }}
+            >
+              {children}
+            </SplineAnimatedContext.Provider>
+          </SmallSplineAnimatedContext.Provider>
+          <Footer />
+        </div>
 
         <ScrollRestoration />
         <Scripts />
