@@ -49,7 +49,7 @@ export default function About() {
             I’m Aryan Deora. <br />I live in Pittsburgh, where I design the
             shape of web to come.
           </h1>
-          <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
+          <div className="mt-6 space-y-7 text-base text-neutral-300/90">
             <p>
               I've always been fascinated by the web. As a kid, I had this old,
               underpowered PC, and while I bought a few games, they’d barely run
@@ -103,15 +103,16 @@ export default function About() {
           <div className="relative h-[30rem] w-[24rem] overflow-hidden rounded-md border-2 border-nav-4-800 bg-neutral-900">
             <img
               src="/imgs/about/bear.webp"
-              alt="a cute bear, my spirit animal"
+              alt="a cute bear, working on a laptop"
               className="absolute inset-0 h-full w-full object-cover"
             />
           </div>
           <ul role="list">
             <li className="flex">
               <a
-                className="group flex text-sm font-medium text-zinc-800 transition hover:text-nav-2-500 dark:text-zinc-200 dark:hover:text-nav-2-500"
-                href="#"
+                className="group flex text-sm font-medium text-zinc-200 transition hover:text-nav-2-500"
+                href="https://twitter.com/aryan__deora"
+                target="_blank"
               >
                 <svg
                   stroke="currentColor"
@@ -128,8 +129,9 @@ export default function About() {
             </li>
             <li className="mt-4 flex">
               <a
-                className="group flex text-sm font-medium text-zinc-800 transition hover:text-nav-2-500 dark:text-zinc-200 dark:hover:text-nav-2-500"
-                href="#"
+                className="group flex text-sm font-medium text-zinc-200 transition hover:text-nav-2-500"
+                href="https://www.instagram.com/aryanrdeora/"
+                target="_blank"
               >
                 <svg
                   viewBox="0 0 24 24"
@@ -144,8 +146,9 @@ export default function About() {
             </li>
             <li className="mt-4 flex">
               <a
-                className="group flex text-sm font-medium text-zinc-800 transition hover:text-nav-2-500 dark:text-zinc-200 dark:hover:text-nav-2-500"
-                href="#"
+                className="group flex text-sm font-medium text-zinc-200 transition hover:text-nav-2-500"
+                href="https://github.com/ardeora"
+                target="_blank"
               >
                 <svg
                   viewBox="0 0 24 24"
@@ -163,8 +166,9 @@ export default function About() {
             </li>
             <li className="mt-4 flex">
               <a
-                className="group flex text-sm font-medium text-zinc-800 transition hover:text-nav-2-500 dark:text-zinc-200 dark:hover:text-nav-2-500"
-                href="#"
+                className="group flex text-sm font-medium text-zinc-200 transition hover:text-nav-2-500"
+                href="https://www.linkedin.com/in/aryandeora/"
+                target="_blank"
               >
                 <svg
                   viewBox="0 0 24 24"
@@ -176,10 +180,11 @@ export default function About() {
                 <span className="ml-4">Follow on LinkedIn</span>
               </a>
             </li>
-            <li className="mt-8 flex border-t border-zinc-100 pt-8 dark:border-zinc-700/40">
+            <li className="mt-8 flex border-t border-zinc-700/40 pt-8">
               <a
-                className="group flex text-sm font-medium text-zinc-800 transition hover:text-nav-2-500 dark:text-zinc-200 dark:hover:text-nav-2-500"
-                href="mailto:spencer@planetaria.tech"
+                className="group flex text-sm font-medium text-zinc-200 transition hover:text-nav-2-500"
+                href="mailto:hi@aryandeora.com"
+                target="_blank"
               >
                 <svg
                   viewBox="0 0 24 24"
@@ -200,7 +205,7 @@ export default function About() {
         <ul role="list" className="block 1024:hidden">
           <li className="flex">
             <a
-              className="group flex text-sm font-medium text-zinc-800 transition hover:text-nav-2-500 dark:text-zinc-200 dark:hover:text-nav-2-500"
+              className="group flex text-sm font-medium text-zinc-200 transition hover:text-nav-2-500"
               href="https://twitter.com/aryan__deora"
               target="_blank"
             >
@@ -219,7 +224,7 @@ export default function About() {
           </li>
           <li className="mt-4 flex">
             <a
-              className="group flex text-sm font-medium text-zinc-800 transition hover:text-nav-2-500 dark:text-zinc-200 dark:hover:text-nav-2-500"
+              className="group flex text-sm font-medium text-zinc-200 transition hover:text-nav-2-500"
               href="https://www.instagram.com/aryanrdeora/"
               target="_blank"
             >
@@ -236,8 +241,9 @@ export default function About() {
           </li>
           <li className="mt-4 flex">
             <a
-              className="group flex text-sm font-medium text-zinc-800 transition hover:text-nav-2-500 dark:text-zinc-200 dark:hover:text-nav-2-500"
-              href="#"
+              className="group flex text-sm font-medium text-zinc-200 transition hover:text-nav-2-500"
+              href="https://github.com/ardeora"
+              target="_blank"
             >
               <svg
                 viewBox="0 0 24 24"
@@ -255,8 +261,9 @@ export default function About() {
           </li>
           <li className="mt-4 flex">
             <a
-              className="group flex text-sm font-medium text-zinc-800 transition hover:text-nav-2-500 dark:text-zinc-200 dark:hover:text-nav-2-500"
-              href="#"
+              className="group flex text-sm font-medium text-zinc-200 transition hover:text-nav-2-500"
+              href="https://www.linkedin.com/in/aryandeora/"
+              target="_blank"
             >
               <svg
                 viewBox="0 0 24 24"
@@ -268,10 +275,11 @@ export default function About() {
               <span className="ml-4">Follow on LinkedIn</span>
             </a>
           </li>
-          <li className="mt-8 flex border-t border-zinc-100 pt-8 dark:border-zinc-700/40">
+          <li className="mt-8 flex border-t border-zinc-700/40 pt-8">
             <a
-              className="group flex text-sm font-medium text-zinc-800 transition hover:text-nav-2-500 dark:text-zinc-200 dark:hover:text-nav-2-500"
-              href="mailto:spencer@planetaria.tech"
+              className="group flex text-sm font-medium text-zinc-200 transition hover:text-nav-2-500"
+              href="mailto:hi@aryandeora.com"
+              target="_blank"
             >
               <svg
                 viewBox="0 0 24 24"

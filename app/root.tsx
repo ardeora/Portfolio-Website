@@ -14,6 +14,58 @@ import {
 } from "./components/Spline";
 import { useState } from "react";
 import Footer from "./components/Footer";
+import { MetaFunction } from "@remix-run/node";
+
+export const meta: MetaFunction = () => [
+  {
+    name: "description",
+    content: "UI Engineer with a passion for design and open source.",
+  },
+  {
+    property: "og:url",
+    content: "https://aryandeora.com",
+  },
+  {
+    property: "og:type",
+    content: "website",
+  },
+  {
+    property: "og:title",
+    content: "Aryan Deora",
+  },
+  {
+    property: "og:description",
+    content: "UI Engineer with a passion for design and open source.",
+  },
+  {
+    property: "og:image",
+    content: "/og-home.jpg",
+  },
+  {
+    name: "twitter:card",
+    content: "summary_large_image",
+  },
+  {
+    property: "twitter:domain",
+    content: "aryandeora.com",
+  },
+  {
+    property: "twitter:url",
+    content: "https://aryandeora.com",
+  },
+  {
+    name: "twitter:title",
+    content: "Aryan Deora",
+  },
+  {
+    name: "twitter:description",
+    content: "UI Engineer with a passion for design and open source.",
+  },
+  {
+    name: "twitter:image",
+    content: "/og-home.jpg",
+  },
+];
 
 export function Layout({ children }: { children: React.ReactNode }) {
   const [animated, setAnimated] = useState(false);
@@ -28,6 +80,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
         <link rel="icon" href="/imgs/favicon.webp" />
         <script src="https://cdn.jsdelivr.net/npm/p5@1.9.4/lib/p5.js"></script>
+
+        <title>Aryan Deora | Home</title>
 
         <link
           rel="preload"

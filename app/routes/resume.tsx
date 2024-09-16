@@ -40,7 +40,7 @@ export default function About() {
           <h1 className="font-editorial text-5xl leading-tight text-neutral-200">
             Resume
           </h1>
-          <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
+          <div className="mt-6 space-y-7 text-base text-zinc-400">
             <p>
               I've always been fascinated by the web. As a kid, I had this old,
               underpowered PC, and while I bought a few games, they’d barely run

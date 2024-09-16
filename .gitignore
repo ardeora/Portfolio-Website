@@ -4,3 +4,5 @@ node_modules
 /build
 .env
 .vercel
+.DS_Store
+dist

@@ -60,7 +60,12 @@ export const BannerClientOnly = () => {
   return (
     <ClientOnly
       fallback={
-        <div className="mt-16 flex items-center gap-8 px-6 720:h-[250px] 948:h-[400px] 1024:gap-24"></div>
+        <div className="mt-16 flex items-center gap-8 px-6 720:h-[250px] 948:h-[400px] 1024:gap-24">
+          <h1 className="sr-only">Aryan Deora</h1>
+          <h2 className="sr-only">
+            UI Engineer with a passion for design and open source.
+          </h2>
+        </div>
       }
     >
       {() => <Banner />}

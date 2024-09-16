@@ -4,38 +4,44 @@ import { Link } from "@remix-run/react";
 
 const TanStackDevtools = () => {
   return (
-    <a
-      href="https://www.npmjs.com/package/@tanstack/query-devtools"
-      target="_blank"
-      className="rounded-md border border-neutral-800 bg-neutral-900/80 p-2 transition-transform hover:scale-[1.005] hover:bg-neutral-900"
-    >
+    <div className="relative rounded-md border border-neutral-800 bg-neutral-900/80 p-2 transition-transform hover:scale-[1.005] hover:bg-neutral-900">
       <div className="relative h-64 overflow-hidden rounded border border-neutral-800 bg-neutral-950">
         <img
           src="/imgs/projects/devtools_bg.webp"
-          alt="Placeholder"
+          alt=""
           className="absolute inset-0 h-full w-full object-cover"
         />
         <div className="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/20 bg-black/20 p-1.5 backdrop-blur">
           <img
             src="/imgs/projects/tanstack_logo.webp"
-            alt="Placeholder"
+            alt="TanStack Logo"
             className="h-18 w-18"
           />
         </div>
       </div>
       <div className="px-1 pt-4 font-editorial text-2xl">
-        <span className="hover:underline">TanStack DevTools</span>
+        <a
+          href="https://www.npmjs.com/package/@tanstack/query-devtools"
+          target="_blank"
+        >
+          <span className="absolute inset-0"></span>
+          <span className="relative hover:underline">TanStack DevTools</span>
+        </a>
       </div>
       <div className="flex px-1 text-sm uppercase text-neutral-400">
-        Open Source
+        <dt className="sr-only">Project Type</dt>
+        <dd>Open Source</dd>
       </div>
       <div className="flex px-1 pb-1 pt-2 text-sm text-neutral-400">
-        Redesigned the devtools for Tanstack Query, making them
-        framework-agnostic using SolidJS! Now, the same devtools work seamlessly
-        with React Query, Vue Query, Solid Query, Svelte, and Angular Query. All
-        powered by a single SolidJS core.
+        <dt className="sr-only">Project Description</dt>
+        <dd>
+          Redesigned the devtools for Tanstack Query, making them
+          framework-agnostic using SolidJS! Now, the same devtools work
+          seamlessly with React Query, Vue Query, Solid Query, Svelte, and
+          Angular Query. All powered by a single SolidJS core.
+        </dd>
       </div>
-    </a>
+    </div>
   );
 };
 
@@ -45,19 +51,26 @@ const Bollywordle = () => {
       <div className="relative h-52 overflow-hidden rounded border border-neutral-800 bg-neutral-950">
         <img
           src="/imgs/projects/bollywordle_bg.webp"
-          alt="Placeholder"
+          alt=""
           className="absolute inset-0 h-full w-full object-cover"
         />
         <div className="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 rounded-full font-daily-shine text-4xl text-white">
           Bollywordle
         </div>
       </div>
-      <div className="px-1 pt-4 font-editorial text-2xl">Bollywordle</div>
+      <div className="px-1 pt-4 font-editorial text-2xl">
+        <dt className="sr-only">Project Name</dt>
+        <dd className="hover:underline">Bollywordle</dd>
+      </div>
       <div className="flex px-1 text-sm uppercase text-neutral-400">
-        Coming Soon
+        <dt className="sr-only">Project Type</dt>
+        <dd>Coming Soon</dd>
       </div>
       <div className="flex px-1 pb-1 pt-2 text-sm text-neutral-400">
-        A Bollywood song guessing game, inspired by Wordle. Coming soon!
+        <dt className="sr-only">Project Description</dt>
+        <dd>
+          A Bollywood song guessing game, inspired by Wordle. Coming soon!
+        </dd>
       </div>
     </div>
   );
@@ -65,85 +78,91 @@ const Bollywordle = () => {
 
 const SolidToast = () => {
   return (
-    <a
-      href="https://solid-toast.com"
-      target="_blank"
-      className="rounded-md border border-neutral-800 bg-neutral-900/80 p-2 transition-transform hover:scale-[1.005] hover:bg-neutral-900"
-    >
+    <div className="relative rounded-md border border-neutral-800 bg-neutral-900/80 p-2 transition-transform hover:scale-[1.005] hover:bg-neutral-900">
       <div className="relative h-52 overflow-hidden rounded border border-neutral-800 bg-neutral-950">
         <img
           src="/imgs/projects/solid_toast_bg.webp"
-          alt="Placeholder"
+          alt=""
           className="absolute inset-0 h-full w-full object-cover"
         />
         <div className="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 rounded-md border border-white/50 bg-white/20 p-2 pl-2.5 backdrop-blur-md">
           <img
             src="/imgs/projects/solid_toast_logo.webp"
-            alt="Placeholder"
+            alt="Solid Toast Logo"
             className="w-16"
           />
         </div>
       </div>
       <div className="px-1 pt-4 font-editorial text-2xl">
-        <span className="hover:underline">Solid Toast</span>
+        <a href="https://solid-toast.com" target="_blank">
+          <span className="absolute inset-0"></span>
+          <span className="relative hover:underline">Solid Toast</span>
+        </a>
       </div>
       <div className="flex px-1 text-sm uppercase text-neutral-400">
-        Open Source
+        <dt className="sr-only">Project Type</dt>
+        <dd>Open Source</dd>
       </div>
       <div className="flex px-1 pb-1 pt-2 text-sm text-neutral-400">
-        A lightweight, easy-to-use library for adding customizable toast
-        notifications to your SolidJS apps. With a tiny bundle size and
-        ready-to-use default toasts, it's perfect for getting users up and
-        running fast!
+        <dt className="sr-only">Project Description</dt>
+        <dd>
+          A lightweight, easy-to-use library for adding customizable toast
+          notifications to your SolidJS apps. With a tiny bundle size and
+          ready-to-use default toasts, it's perfect for getting users up and
+          running fast!
+        </dd>
       </div>
-    </a>
+    </div>
   );
 };
 
 const TanstackSolidQuery = () => {
   return (
-    <a
-      href="https://www.npmjs.com/package/@tanstack/solid-query"
-      target="_blank"
-      className="rounded-md border border-neutral-800 bg-neutral-900/80 p-2 transition-transform hover:scale-[1.005] hover:bg-neutral-900"
-    >
+    <div className="relative rounded-md border border-neutral-800 bg-neutral-900/80 p-2 transition-transform hover:scale-[1.005] hover:bg-neutral-900">
       <div className="relative h-56 overflow-hidden rounded border border-neutral-800 bg-neutral-950">
         <img
           src="/imgs/projects/solid_query_bg.webp"
-          alt="Placeholder"
+          alt=""
           className="absolute inset-0 h-full w-full object-cover"
         />
         <div className="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 rounded-md border border-white/20 bg-blue-50/10 p-1.5 contrast-125 backdrop-blur">
           <img
             src="/imgs/projects/solid_js_logo.webp"
-            alt="Placeholder"
+            alt="SolidJS Logo"
             className="w-16"
           />
         </div>
       </div>
       <div className="px-1 pt-4 font-editorial text-2xl">
-        <span className="hover:underline">TanStack Solid Query</span>
+        <a
+          href="https://www.npmjs.com/package/@tanstack/solid-query"
+          target="_blank"
+        >
+          <span className="absolute inset-0"></span>
+          <span className="relative hover:underline">TanStack Solid Query</span>
+        </a>
       </div>
       <div className="flex px-1 text-sm uppercase text-neutral-400">
-        Open Source
+        <dt className="sr-only">Project Type</dt>
+        <dd>Open Source</dd>
       </div>
       <div className="flex px-1 pb-1 pt-2 text-sm text-neutral-400">
-        Developed and maintain Solid Query, the SolidJS version of Tanstack
-        Query, a powerful async state manager for handling API queries and async
-        functions. Solid Query runs isomorphically, meaning it works seamlessly
-        on both the server and client — enabling server-side rendering on first
-        load and fast future navigations with cached data.
+        <dt className="sr-only">Project Description</dt>
+        <dd>
+          Developed and maintain Solid Query, the SolidJS version of Tanstack
+          Query, a powerful async state manager for handling API queries and
+          async functions. Solid Query runs isomorphically, meaning it works
+          seamlessly on both the server and client — enabling server-side
+          rendering on first load and fast future navigations with cached data.
+        </dd>
       </div>
-    </a>
+    </div>
   );
 };
 
 const GlobalNOC = () => {
   return (
-    <Link
-      to="/resume"
-      className="rounded-md border border-neutral-800 bg-neutral-900/80 p-2 transition-transform hover:scale-[1.005] hover:bg-neutral-900"
-    >
+    <div className="relative rounded-md border border-neutral-800 bg-neutral-900/80 p-2 transition-transform hover:scale-[1.005] hover:bg-neutral-900">
       <div className="relative h-64 overflow-hidden rounded border border-neutral-800 bg-neutral-950">
         <img
           src="/imgs/projects/grnoc_bg.webp"
@@ -159,27 +178,31 @@ const GlobalNOC = () => {
         </div>
       </div>
       <div className="px-1 pt-4 font-editorial text-2xl">
-        <span className="hover:underline">GlobalNOC</span>
+        <Link to="/resume">
+          <span className="absolute inset-0"></span>
+          <span className="relative hover:underline">GlobalNOC</span>
+        </Link>
       </div>
       <div className="flex px-1 text-sm uppercase text-neutral-400">
-        Full Time
+        <dt className="sr-only">Project Type</dt>
+        <dd>Full Time</dd>
       </div>
       <div className="flex px-1 pb-1 pt-2 text-sm text-neutral-400">
-        Worked full-time as a full-stack engineer, focusing on frontend
-        technologies. Led the development of GlobalNOC's design system and
-        networking layer, creating high-performance, type-safe web applications.
+        <dt className="sr-only">Project Description</dt>
+        <dd>
+          Worked full-time as a full-stack engineer, focusing on frontend
+          technologies. Led the development of GlobalNOC's design system and
+          networking layer, creating high-performance, type-safe web
+          applications.
+        </dd>
       </div>
-    </Link>
+    </div>
   );
 };
 
 const LWJ = () => {
   return (
-    <a
-      href="https://www.youtube.com/watch?v=3Iz3D7cVi04"
-      target="_blank"
-      className="rounded-md border border-neutral-800 bg-neutral-900/80 p-2 transition-transform hover:scale-[1.005] hover:bg-neutral-900"
-    >
+    <div className="relative rounded-md border border-neutral-800 bg-neutral-900/80 p-2 transition-transform hover:scale-[1.005] hover:bg-neutral-900">
       <div className="relative h-52 overflow-hidden rounded border border-neutral-800 bg-neutral-950">
         <img
           src="/imgs/projects/lwj_bg.webp"
@@ -193,7 +216,12 @@ const LWJ = () => {
         </div>
       </div>
       <div className="px-1 pt-4 font-editorial text-2xl">
-        <span className="hover:underline">Learn With Jason Show</span>
+        <a href="https://www.youtube.com/watch?v=3Iz3D7cVi04" target="_blank">
+          <span className="absolute inset-0"></span>
+          <span className="relative hover:underline">
+            Learn With Jason Show
+          </span>
+        </a>
       </div>
       <div className="flex px-1 text-sm uppercase text-neutral-400">
         Interview
@@ -205,7 +233,7 @@ const LWJ = () => {
         components, all sharing the same query cache. API data was deduped
         across all components, making updates super efficient and smooth.
       </div>
-    </a>
+    </div>
   );
 };
 
