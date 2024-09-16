@@ -3,15 +3,56 @@ import { BannerClientOnly } from "~/components/Banner";
 import { ProjectCards } from "~/components/ProjectCards";
 import { TestClientOnly } from "~/components/Test";
 
-export const meta: MetaFunction = () => {
-  return [
-    { title: "Aryan Deora" },
-    {
-      name: "description",
-      content: "UI Engineer with a passion for design and open source.",
-    },
-  ];
-};
+export const meta: MetaFunction = () => [
+  {
+    name: "description",
+    content: "UI Engineer with a passion for design and open source.",
+  },
+  {
+    property: "og:url",
+    content: "https://aryandeora.com",
+  },
+  {
+    property: "og:type",
+    content: "website",
+  },
+  {
+    property: "og:title",
+    content: "Aryan Deora",
+  },
+  {
+    property: "og:description",
+    content: "UI Engineer with a passion for design and open source.",
+  },
+  {
+    property: "og:image",
+    content: "/og-home.jpg",
+  },
+  {
+    name: "twitter:card",
+    content: "summary_large_image",
+  },
+  {
+    property: "twitter:domain",
+    content: "aryandeora.com",
+  },
+  {
+    property: "twitter:url",
+    content: "https://aryandeora.com",
+  },
+  {
+    name: "twitter:title",
+    content: "Aryan Deora",
+  },
+  {
+    name: "twitter:description",
+    content: "UI Engineer with a passion for design and open source.",
+  },
+  {
+    name: "twitter:image",
+    content: "/og-home.jpg",
+  },
+];
 
 export default function Index() {
   return (

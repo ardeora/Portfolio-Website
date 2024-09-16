@@ -23,13 +23,7 @@ import {
 import { FaJava } from "react-icons/fa";
 
 export const meta: MetaFunction = () => {
-  return [
-    { title: "Aryan Deora | About Me" },
-    {
-      name: "description",
-      content: "UI Engineer with a passion for design and open source.",
-    },
-  ];
+  return [{ title: "Aryan Deora | About Me" }];
 };
 
 export default function About() {
