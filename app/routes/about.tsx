@@ -22,9 +22,59 @@ import {
 } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 
-export const meta: MetaFunction = () => {
-  return [{ title: "Aryan Deora | About Me" }];
-};
+export const meta: MetaFunction = () => [
+  {
+    name: "description",
+    content: "UI Engineer with a passion for design and open source.",
+  },
+  {
+    property: "og:url",
+    content: "https://aryandeora.com/about",
+  },
+  {
+    property: "og:type",
+    content: "website",
+  },
+  {
+    property: "og:title",
+    content: "Aryan Deora",
+  },
+  {
+    property: "og:description",
+    content: "UI Engineer with a passion for design and open source.",
+  },
+  {
+    property: "og:image",
+    content: "/og-home.jpg",
+  },
+  {
+    name: "twitter:card",
+    content: "summary_large_image",
+  },
+  {
+    property: "twitter:domain",
+    content: "aryandeora.com",
+  },
+  {
+    property: "twitter:url",
+    content: "https://aryandeora.com/about",
+  },
+  {
+    name: "twitter:title",
+    content: "Aryan Deora",
+  },
+  {
+    name: "twitter:description",
+    content: "UI Engineer with a passion for design and open source.",
+  },
+  {
+    name: "twitter:image",
+    content: "/og-home.jpg",
+  },
+  {
+    title: "Aryan Deora | About",
+  },
+];
 
 export default function About() {
   return (

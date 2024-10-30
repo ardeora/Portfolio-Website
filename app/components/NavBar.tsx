@@ -12,6 +12,7 @@ const NavBar = () => {
     "/blog": "border-nav-3-900",
     "/gallery": "border-nav-4-900",
     "/resume": "border-nav-1-900",
+    "/tswd": "border-nav-1-900",
   };
 
   const profileBorderColorMap = {
@@ -20,6 +21,7 @@ const NavBar = () => {
     "/blog": "border-nav-3-800",
     "/gallery": "border-nav-4-800",
     "/resume": "border-nav-1-800",
+    "/tswd": "border-nav-1-800",
   };
 
   type BorderColor = keyof typeof borderColorMap;

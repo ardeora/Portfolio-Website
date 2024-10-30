@@ -22,17 +22,61 @@ import {
 } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 
-export const meta: MetaFunction = () => {
-  return [
-    { title: "Aryan Deora | About Me" },
-    {
-      name: "description",
-      content: "UI Engineer with a passion for design and open source.",
-    },
-  ];
-};
+export const meta: MetaFunction = () => [
+  {
+    name: "description",
+    content: "UI Engineer with a passion for design and open source.",
+  },
+  {
+    property: "og:url",
+    content: "https://aryandeora.com/resume",
+  },
+  {
+    property: "og:type",
+    content: "website",
+  },
+  {
+    property: "og:title",
+    content: "Aryan Deora",
+  },
+  {
+    property: "og:description",
+    content: "UI Engineer with a passion for design and open source.",
+  },
+  {
+    property: "og:image",
+    content: "/og-home.jpg",
+  },
+  {
+    name: "twitter:card",
+    content: "summary_large_image",
+  },
+  {
+    property: "twitter:domain",
+    content: "aryandeora.com",
+  },
+  {
+    property: "twitter:url",
+    content: "https://aryandeora.com/resume",
+  },
+  {
+    name: "twitter:title",
+    content: "Aryan Deora",
+  },
+  {
+    name: "twitter:description",
+    content: "UI Engineer with a passion for design and open source.",
+  },
+  {
+    name: "twitter:image",
+    content: "/og-home.jpg",
+  },
+  {
+    title: "Aryan Deora | Resume",
+  },
+];
 
-export default function About() {
+export default function Resume() {
   return (
     <div className="mx-auto flex max-w-4xl flex-1 flex-col text-neutral-300 1024:max-w-6xl">
       <div className="mt-16 flex flex-col gap-12 px-6 1024:flex-row 1024:gap-24">
