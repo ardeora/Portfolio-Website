@@ -1,5 +1,6 @@
 import { NavLink, useMatches } from "@remix-run/react";
 import { motion } from "framer-motion";
+import { useMemo } from "react";
 
 const NavBar = () => {
   const match = useMatches();
@@ -26,13 +27,33 @@ const NavBar = () => {
 
   type BorderColor = keyof typeof borderColorMap;
 
+  const borderColor = useMemo(() => {
+    const keys = Object.keys(borderColorMap) as BorderColor[];
+    return keys.reduce((acc, key) => {
+      if (path.includes(key)) {
+        return borderColorMap[key];
+      }
+      return acc;
+    }, borderColorMap["/"]);
+  }, [path]);
+
+  const profileBorderColor = useMemo(() => {
+    const keys = Object.keys(profileBorderColorMap) as BorderColor[];
+    return keys.reduce((acc, key) => {
+      if (path.includes(key)) {
+        return profileBorderColorMap[key];
+      }
+      return acc;
+    }, profileBorderColorMap["/"]);
+  }, [path]);
+
   return (
     <div className="flex justify-center px-6 pt-4 720:px-0">
       <div className="hidden 720:block">
         <div className="relative flex h-10 items-center gap-4">
           <div
             className={`absolute -left-12 top-0.5 flex h-9 w-9 items-center justify-center rounded-full border-2 bg-neutral-800 transition-colors duration-500 ${
-              profileBorderColorMap[path as BorderColor]
+              borderColor
             } `}
           >
             <NavLink aria-label="Home" className="pointer-events-auto" to="/">
@@ -46,7 +67,7 @@ const NavBar = () => {
 
           <nav
             className={`pointer-events-auto block rounded-full border transition-colors duration-500 ${
-              borderColorMap[path as BorderColor]
+              borderColor
             }`}
           >
             <ul className="flex rounded-full bg-neutral-900 px-3 text-sm font-medium text-neutral-300 shadow-lg shadow-neutral-800/5 ring-1 ring-neutral-900/5 backdrop-blur">
@@ -143,7 +164,7 @@ const NavBar = () => {
         <div className="relative flex h-10 items-center justify-between">
           <div
             className={`flex h-9 w-9 items-center justify-center rounded-full border-2 bg-neutral-800 transition-colors duration-500 ${
-              profileBorderColorMap[path as BorderColor]
+              profileBorderColor
             } `}
           >
             <a aria-label="Home" className="pointer-events-auto" href="/">
@@ -157,7 +178,7 @@ const NavBar = () => {
 
           <nav
             className={`pointer-events-auto block rounded-full border transition-colors duration-500 ${
-              borderColorMap[path as BorderColor]
+              borderColor
             }`}
           >
             <ul className="flex rounded-full bg-neutral-900 px-3 text-sm font-medium text-neutral-300 shadow-lg shadow-neutral-800/5 ring-1 ring-neutral-900/5 backdrop-blur">

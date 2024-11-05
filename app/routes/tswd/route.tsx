@@ -1,3 +1,4 @@
+import { Link } from "@remix-run/react";
 import React from "react";
 import { BannerClientOnly } from "~/components/Banner";
 
@@ -57,42 +58,24 @@ const Home = () => {
 
       <div className="mt-12 px-6 pb-36">
         <div className="text-lg uppercase text-neutral-400">Portfolio</div>
-        <div className="mt-6 grid grid-cols-1 gap-4 text-base text-neutral-300/90 948:grid-cols-2">
-          <div className="flex min-h-56 gap-4 rounded-md border border-neutral-800 bg-neutral-900 p-2">
-            <div className="aspect-square min-h-56 bg-neutral-950"></div>
-            <div className="flex flex-col">
-              <p className="text-xl font-medium">Assignment 1</p>
-              <p className="text-neutral-400">29th October 2024</p>
-              <p className="pt-2 text-sm"></p>
+        <div className="mt-6 grid grid-cols-1 gap-4 text-base text-neutral-300/90 948:grid-cols-3">
+          <Link
+            to="./assignment-2"
+            className="flex min-h-56 flex-col gap-4 rounded-md border border-neutral-800 bg-neutral-900 p-2"
+          >
+            <div className="relative min-h-56 bg-white p-4">
+              <img
+                src="/imgs/tswd/a2/1.png"
+                alt="Cover"
+                className="h-full w-full object-cover"
+              />
             </div>
-          </div>
-
-          <div className="flex min-h-56 gap-4 rounded-md border border-neutral-800 bg-neutral-900 p-2">
-            <div className="aspect-square min-h-56 bg-neutral-950"></div>
             <div className="flex flex-col">
               <p className="text-xl font-medium">Assignment 2</p>
-              <p className="text-neutral-400">29th October 2024</p>
-              <p className="pt-2 text-sm"></p>
+              <p className="text-neutral-400">4th November 2024</p>
+              {/* <p className="pt-2 text-sm"></p> */}
             </div>
-          </div>
-
-          <div className="flex min-h-56 gap-4 rounded-md border border-neutral-800 bg-neutral-900 p-2">
-            <div className="aspect-square min-h-56 bg-neutral-950"></div>
-            <div className="flex flex-col">
-              <p className="text-xl font-medium">Assignment 3</p>
-              <p className="text-neutral-400">29th October 2024</p>
-              <p className="pt-2 text-sm"></p>
-            </div>
-          </div>
-
-          <div className="flex min-h-56 gap-4 rounded-md border border-neutral-800 bg-neutral-900 p-2">
-            <div className="aspect-square min-h-56 bg-neutral-950"></div>
-            <div className="flex flex-col">
-              <p className="text-xl font-medium">Assignment 4</p>
-              <p className="text-neutral-400">29th October 2024</p>
-              <p className="pt-2 text-sm"></p>
-            </div>
-          </div>
+          </Link>
         </div>
       </div>
     </div>
