@@ -136,6 +136,31 @@ const Home = () => {
           <param name="filter" value="publish=yes" />
         </object>
       </div>{" "}
+      <div className="pb-8 pt-16">
+        <h2 className="font-editorial text-4xl">Write-Up</h2>
+      </div>
+      <div className="space-y-4 pb-16 text-base text-neutral-300/90">
+        <p>
+          The heat map visualization shows the trend of debt-to-GDP ratios for
+          various countries over the years. We can see that the ratio increases
+          for most countries between 2011 and 2014, likely due to the effects of
+          the 2008 financial crisis. After 2014, the ratio generally begins to
+          decrease for most countries.
+        </p>
+        <p>
+          For my custom visualization, I compared the debt-to-GDP ratio for the
+          last three years in the dataset by calculating the average for 2017,
+          2018, and 2019. I used a tree map to highlight which countries had the
+          highest average ratios over these years. The tree map shows that Japan
+          had the highest average ratio across this period. This layout also
+          makes it easy to compare ratios by looking at the size of each
+          country’s area. For instance, Japan’s area is about four times the
+          size of Sweden’s, showing its significantly higher ratio. I also
+          adjusted the color scheme: countries well above the 100% mark are
+          shaded in red, while those well below are in green, making it easy to
+          spot the countries with the highest and lowest ratios at a glance.
+        </p>
+      </div>
     </div>
   );
 };

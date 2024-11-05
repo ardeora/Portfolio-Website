@@ -18,6 +18,8 @@ const Footer = () => {
       "group flex text-sm font-medium text-neutral-500 transition hover:text-nav-1-500",
     "/tswd":
       "group flex text-sm font-medium text-neutral-500 transition hover:text-nav-1-500",
+    "/tswd/assignment-2":
+      "group flex text-sm font-medium text-neutral-500 transition hover:text-nav-1-500",
   };
 
   return (
