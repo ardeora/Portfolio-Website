@@ -43,7 +43,7 @@ const Home = () => {
               For this week's assignment I decided to choose a visualization
               from an article I read few months ago. The article is from the{" "}
               <a
-                href="https://www.pewresearch.org/"
+                href="https://www.pewresearch.org/short-reads/2022/09/08/payment-apps-like-venmo-and-cash-app-bring-convenience-and-security-concerns-to-some-users/"
                 target="_blank"
                 className="text-nav-4-600 underline"
               >
@@ -84,7 +84,7 @@ const Home = () => {
                     target="_blank"
                     className="text-nav-4-600 underline"
                   >
-                    Source: Pew Research Center, 2024.
+                    Source: Pew Research Center, 2022.
                   </a>
                 </p>
               </div>
@@ -174,6 +174,73 @@ const Home = () => {
                 className="rounded-md object-contain"
               />
             </div>
+          </div>
+        </div>
+
+        <div>
+          <h2 className="pb-1 text-2xl font-semibold">
+            Step 4: Testing the redesign
+          </h2>
+          <div className="flex flex-col gap-2">
+            <p>
+              I conducted two interviews where I presented sketches of the
+              redesigned data visualization to get feedback. I began by simply
+              handing over the chart and asking, “What insights can you gather
+              from this?” Both interviewees quickly recognized that the
+              visualization depicted payment app usage across different
+              demographics. However, one interviewee immediately struggled with
+              reading the labels on the radial axis, finding them difficult to
+              follow.
+            </p>
+            <p>
+              I had hoped that they would immediately notice how Cash App’s
+              usage stats stand out significantly compared to the other apps.
+              When I asked, “What’s the first thing you notice about this
+              graph?” one of the interviewees did as expected and pointed out
+              the Cash App data. However, the other interviewee said, “It looks
+              like Asians seem to use all of these apps,” highlighting a
+              different insight. This unexpected observation made me realize
+              that the visualization might be drawing attention to different
+              aspects for different viewers, which could impact how effectively
+              the key message is communicated.
+            </p>
+            <p>
+              Continuing the interview, I received some consistent feedback from
+              both interviewees:
+            </p>
+            <ol className="list-inside list-decimal pl-4 [&>li]:pb-2">
+              <li>
+                They both mentioned that it was difficult to gauge the overall
+                popularity of each app because the charts used different scales,
+                which made comparisons challenging.
+              </li>
+              <li>
+                They expressed a desire to see a clearer visual indication of
+                the most and least popular apps for each race, as this insight
+                wasn’t easily discernible.
+              </li>
+              <li>
+                Both interviewees found that having to switch between four
+                separate charts required too much context switching, which made
+                the visualization harder to understand as a whole.
+              </li>
+              <li>
+                They also noted that the axis labels needed to be more
+                prominent, as they were hard to read, and the grid lines seemed
+                to fade into the background, reducing the overall clarity of the
+                visualization.
+              </li>
+            </ol>
+
+            <p>
+              These insights highlighted the importance of creating a more
+              unified and visually clear design. A simplified layout with
+              consistent scales and more prominent axis labels would make it
+              easier to compare data at a glance. Additionally, using a single,
+              integrated visualization could reduce the need for context
+              switching, making the insights more intuitive and engaging for
+              viewers.
+            </p>
           </div>
         </div>
 
