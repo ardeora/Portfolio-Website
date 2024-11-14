@@ -1,5 +1,5 @@
 import { useMatches } from "@remix-run/react";
-import React from "react";
+import React, { useMemo } from "react";
 
 const Footer = () => {
   const match = useMatches();
@@ -18,9 +18,19 @@ const Footer = () => {
       "group flex text-sm font-medium text-neutral-500 transition hover:text-nav-1-500",
     "/tswd":
       "group flex text-sm font-medium text-neutral-500 transition hover:text-nav-1-500",
-    "/tswd/assignment-2":
-      "group flex text-sm font-medium text-neutral-500 transition hover:text-nav-1-500",
   };
+
+  type LinkColor = keyof typeof linksColorMap;
+
+  const linksColor = useMemo(() => {
+    const keys = Object.keys(linksColorMap) as LinkColor[];
+    return keys.reduce((acc, key) => {
+      if (path.includes(key)) {
+        return linksColorMap[key];
+      }
+      return acc;
+    }, linksColorMap["/"]);
+  }, [path]);
 
   return (
     <footer className="flex h-20 justify-center bg-neutral-900">
@@ -28,7 +38,7 @@ const Footer = () => {
         <ul role="list" className="flex items-center gap-2">
           <li className="flex">
             <a
-              className={linksColorMap[path as keyof typeof linksColorMap]}
+              className={linksColor}
               href="https://twitter.com/aryan__deora"
               target="_blank"
             >
@@ -46,7 +56,7 @@ const Footer = () => {
           </li>
           <li className="flex">
             <a
-              className={linksColorMap[path as keyof typeof linksColorMap]}
+              className={linksColor}
               href="https://www.instagram.com/aryanrdeora/"
               target="_blank"
             >
@@ -63,7 +73,7 @@ const Footer = () => {
           </li>
           <li className="flex">
             <a
-              className={linksColorMap[path as keyof typeof linksColorMap]}
+              className={linksColor}
               href="https://github.com/ardeora"
               target="_blank"
             >
@@ -83,7 +93,7 @@ const Footer = () => {
           </li>
           <li className="flex">
             <a
-              className={linksColorMap[path as keyof typeof linksColorMap]}
+              className={linksColor}
               href="https://www.linkedin.com/in/aryandeora/"
               target="_blank"
             >
@@ -99,7 +109,7 @@ const Footer = () => {
           </li>
           <li className="flex">
             <a
-              className={linksColorMap[path as keyof typeof linksColorMap]}
+              className={linksColor}
               href="mailto:hi@aryandeora.com"
               target="_blank"
             >
