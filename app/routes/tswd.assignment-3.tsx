@@ -127,6 +127,51 @@ const Home = () => {
             </p>
           </div>
         </div>
+
+        <div>
+          <h2 className="pb-1 text-2xl font-semibold">
+            Step 3: Sketching out the redesign
+          </h2>
+          <div className="flex flex-col gap-2">
+            <p>
+              To enhance the Pew Research Center's visualization on payment app
+              usage, I propose a redesign that incorporates brand colors,
+              circular radar graphs, and a segmented layout. The redesigned
+              visualization will offer a more engaging and intuitive
+              presentation of demographic trends, facilitating quick
+              comprehension and comparison across different groups.
+            </p>
+            <p>
+              The redesign will feature distinct sections for age and
+              demographics, each employing the brand colors of the payment apps
+              to enhance recognition and association. Circular radar graphs will
+              replace the bar charts, enabling a more visually appealing and
+              intuitive representation of usage patterns. The redesign will also
+              include interactive elements, such as hover effects and tooltips,
+              to provide additional context and storytelling elements that
+              enhance user engagement.
+            </p>
+            <p>
+              Here is the initial sketch of the redesigned visualization,
+              showcasing the proposed layout and design elements. The final
+              version will incorporate additional details and will be
+              interactive.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 gap-4 pt-4 720:grid-cols-2">
+            <img
+              src="/imgs/tswd/a3/2.png"
+              alt="Redesign Sketch"
+              className="rounded-md object-contain"
+            />
+            <img
+              src="/imgs/tswd/a3/3.png"
+              alt="Redesign Sketch"
+              className="rounded-md object-contain"
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
