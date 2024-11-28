@@ -269,6 +269,127 @@ const Home = () => {
             </ol>
           </div>
         </div>
+
+        <div>
+          <h2 className="pb-1 text-2xl font-semibold">
+            Interview insights and summary
+          </h2>
+          <div className="flex flex-col gap-2">
+            <p>
+              I interviewed three different colleagues and friends and here are
+              the summary findings from my interviews:
+            </p>
+
+            <ol className="list-inside list-decimal">
+              <li className="pb-1">
+                <strong>Question 1</strong>
+                <ul className="list-inside list-disc pl-4">
+                  <li>
+                    The feedback indicates that beginning the story with
+                    color-themed movie posters featuring a single person is
+                    engaging and effective. All three friends agree that this
+                    approach immediately captures attention and sets a clear
+                    thematic tone. It piques interest by showcasing visually
+                    striking images and makes the concept of exploring color and
+                    emotion evident from the start.
+                  </li>
+                </ul>
+              </li>
+
+              <li className="pb-1">
+                <strong>Question 2</strong>
+                <ul className="list-inside list-disc pl-4">
+                  <li>
+                    Regarding the radar charts, the consensus is that they add
+                    value by providing visual data that complements the theme.
+                    They help illustrate the prevalence of certain colors in
+                    specific movie genres, adding depth to the narrative.
+                    However, it was difficult for all of them to interpret what
+                    the ticks on the radar chart meant. Clarifying this would
+                    make the visualizations more effective. They suggest adding
+                    a legend or explanation to help viewers understand the data
+                    better. They also reccomend only showing one radar chart at
+                    a time to avoid overwhelming the audience.
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <strong>Question 3</strong>
+                <ul className="list-inside list-disc pl-4">
+                  <li>
+                    The overall narrative is perceived as clear and engaging,
+                    effectively conveying the message about how color influences
+                    audience emotions. While the main concept resonates, one
+                    suggestion is to include more examples linking specific
+                    colors to different genres to strengthen the point of the
+                    story. They suggested that adding a summary section at the
+                    end of each color deep dive that talks about the emotions
+                    that color evokes and how it is used in movie posters would
+                    be helpful. This will enable smooth transitions between
+                    sections and will also help maintain clarity and make the
+                    story easier to follow.
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <strong>Question 4</strong>
+                <ul className="list-inside list-disc pl-4">
+                  <li>
+                    For the call to action, they suggested creating an
+                    interactive element that allows the audience to explore the
+                    color schemes of their favorite movie posters. This could be
+                    a quiz or a tool that lets users select a genre and see the
+                    most common colors used in movie posters for that genre.
+                    This interactive element will engage the audience and
+                    reinforce the message about the impact of color in movie
+                    posters.
+                  </li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <div>
+          <h2 className="pb-1 text-2xl font-semibold">Final Presentation</h2>
+          <div className="flex flex-col gap-2">
+            <p>
+              Based on the feedback from my interviews, I will make the
+              following changes to my final presentation:
+            </p>
+
+            <ol className="list-inside list-decimal">
+              <li className="pb-1">
+                I will include a legend or explanation for the radar charts to
+                help viewers understand the data better. I will also show only
+                one radar chart at a time to avoid overwhelming the audience.
+              </li>
+
+              <li className="pb-1">
+                I will add a summary section at the end of each color deep dive
+                that talks about the emotions that color evokes and how it is
+                used in movie posters. This will enable smooth transitions
+                between sections and will also help maintain clarity and make
+                the story easier to follow.
+              </li>
+
+              <div className="py-4">
+                <img src="/imgs/tswd/a5/5.png" alt="Final Presentation" />
+              </div>
+
+              <li>
+                I will create an interactive element that allows the audience to
+                explore the color schemes of their favorite movie posters. This
+                could be a quiz or a tool that lets users select a genre and see
+                the most common colors used in movie posters for that genre.
+                This interactive element will engage the audience and reinforce
+                the message about the impact of color in movie posters.
+              </li>
+            </ol>
+          </div>
+        </div>
       </div>
     </div>
   );
