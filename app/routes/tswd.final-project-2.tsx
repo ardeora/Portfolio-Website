@@ -188,20 +188,77 @@ const Home = () => {
         </div>
 
         <div>
-          <h2 className="pb-1 text-2xl font-semibold">Method and medium</h2>
+          <h2 className="pb-1 text-2xl font-semibold">Target audience</h2>
           <div className="flex flex-col gap-2">
             <p>
-              For the method of storytelling. I plan to use shorthand to present
-              the story and I plan to use JavaScript and data visualization
-              libraries like d3.js to create interactive charts and graphs. I
-              will also use HTML, CSS, and JavaScript to create a website where
-              I can present my story. I will use the website to present the data
-              and analysis I have collected and to showcase the interactive
-              charts and graphs I have created. I will also use the website to
-              present the story I have created and to provide additional
-              information and context for the data and analysis I have
-              collected.
+              I hope to reach anyone interested in visual storytelling—movie
+              enthusiasts, designers, and people curious about the impact of
+              color in media. My goal is to illustrate how color influences our
+              perceptions and feelings, and how it plays a crucial role in
+              setting the mood and expectations for a movie.
             </p>
+          </div>
+        </div>
+
+        <div>
+          <h2 className="pb-1 text-2xl font-semibold">Interview script</h2>
+          <div className="flex flex-col gap-2">
+            <p>Here are some questions I plan to ask in my interviews:</p>
+
+            <ol className="list-inside list-decimal">
+              <li className="pb-1">
+                <strong>Goal</strong>: Assess if the concept of using
+                color-themed movie posters is engaging.
+                <ul className="list-inside list-disc pl-4">
+                  <li>
+                    <strong>Question</strong>: What do you think about starting
+                    the story with different movie posters that each feature one
+                    person and a distinct color scheme? Does this idea grab your
+                    interest?
+                  </li>
+                </ul>
+              </li>
+
+              <li className="pb-1">
+                <strong>Goal</strong>: Understand if the radar charts add value
+                to the story.
+                <ul className="list-inside list-disc pl-4">
+                  <li>
+                    <strong>Question</strong>: Do the radar charts showing the
+                    top movie genres that use red in their poster schemes help
+                    you understand the prevalence of red in certain genres? Are
+                    they helpful or distracting?
+                  </li>
+                </ul>
+              </li>
+
+              <li className="pb-1">
+                <strong>Goal</strong>: Find out if the overall narrative is
+                clear and engaging.
+                <ul className="list-inside list-disc pl-4">
+                  <li>
+                    <strong>Question</strong>: After hearing about my story, do
+                    you think the message about how color influences audience
+                    emotions comes across clearly? Is there any part that feels
+                    confusing or could be improved?
+                  </li>
+                </ul>
+              </li>
+
+              <li className="pb-1">
+                <strong>Goal</strong>: Gather ideas on how to effectively
+                conclude the presentation with a compelling call to action.
+                <ul className="list-inside list-disc pl-4">
+                  <li>
+                    <strong>Question</strong>: I'm looking to create a strong
+                    ending for my presentation. What suggestions do you have for
+                    a call to action that would resonate with the audience and
+                    reinforce the message about the impact of color in movie
+                    posters?
+                  </li>
+                </ul>
+              </li>
+            </ol>
           </div>
         </div>
       </div>
