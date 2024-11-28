@@ -99,7 +99,7 @@ const Home = () => {
             to="./final-project-1"
             className="flex min-h-56 flex-col gap-4 rounded-md border border-neutral-800 bg-neutral-900 p-2"
           >
-            <div className="relative h-64 bg-white p-1">
+            <div className="relative h-64 bg-neutral-950 p-1">
               <img
                 src="/imgs/tswd/a4/1.png"
                 alt="Cover"
@@ -109,6 +109,24 @@ const Home = () => {
             <div className="flex flex-col">
               <p className="text-xl font-medium">Final Project: 1</p>
               <p className="text-neutral-400">10th November 2024</p>
+              {/* <p className="pt-2 text-sm"></p> */}
+            </div>
+          </Link>
+
+          <Link
+            to="./final-project-2"
+            className="flex min-h-56 flex-col gap-4 rounded-md border border-neutral-800 bg-neutral-900 p-2"
+          >
+            <div className="relative h-64 bg-neutral-950 p-1">
+              <img
+                src="/imgs/tswd/a5/7.png"
+                alt="Cover"
+                className="h-full w-full object-contain"
+              />
+            </div>
+            <div className="flex flex-col">
+              <p className="text-xl font-medium">Final Project: 2</p>
+              <p className="text-neutral-400">27th November 2024</p>
               {/* <p className="pt-2 text-sm"></p> */}
             </div>
           </Link>
