@@ -1,8 +1,6 @@
 import { useEffect, useRef } from "react";
-import { gsap } from "gsap";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { BackgroundGradientAnimation } from "./BGGradient";
 
 const useEffectOnce = (effect: React.EffectCallback) => {
@@ -20,7 +18,6 @@ const useEffectOnce = (effect: React.EffectCallback) => {
 const Heading = () => {
   useEffectOnce(() => {
     gsap.registerPlugin(ScrollTrigger);
-    console.log("gsap", gsap);
   });
 
   return (

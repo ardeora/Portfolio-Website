@@ -15,12 +15,4 @@ export default defineConfig({
     }),
     tsconfigPaths(),
   ],
-  ssr: {
-    noExternal: ["gsap", "gsap/ScrollTrigger"],
-  },
-  build: {
-    rollupOptions: {
-      external: ["gsap", "gsap/ScrollTrigger"],
-    },
-  },
 });

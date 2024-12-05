@@ -81,6 +81,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <link rel="icon" href="/imgs/favicon.webp" />
         <script src="https://cdn.jsdelivr.net/npm/p5@1.9.4/lib/p5.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
