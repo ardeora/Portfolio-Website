@@ -18,4 +18,9 @@ export default defineConfig({
   ssr: {
     noExternal: ["gsap", "gsap/ScrollTrigger"],
   },
+  build: {
+    rollupOptions: {
+      external: ["gsap", "gsap/ScrollTrigger"],
+    },
+  },
 });
