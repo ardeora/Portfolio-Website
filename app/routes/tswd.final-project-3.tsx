@@ -5,7 +5,7 @@ import { BannerClientOnly } from "~/components/Banner";
 import { ClientOnly } from "remix-utils/client-only";
 import { requireAuthCookie } from "~/lib/utils/auth";
 import { LoaderFunctionArgs } from "@remix-run/node";
-import Page from "~/components/story";
+import Page from "~/components/Story";
 
 export const loader = async ({ request }: LoaderFunctionArgs) => {
   const id = await requireAuthCookie(request);
