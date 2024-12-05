@@ -47,6 +47,8 @@ const NavBar = () => {
     }, profileBorderColorMap["/"]);
   }, [path]);
 
+  if (path === "/tswd/final-project-3") return null;
+
   return (
     <div className="flex justify-center px-6 pt-4 720:px-0">
       <div className="hidden 720:block">

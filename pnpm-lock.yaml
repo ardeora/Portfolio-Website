@@ -24,11 +24,17 @@ dependencies:
     specifier: ^2.1.1
     version: 2.1.1
   framer-motion:
-    specifier: ^11.3.28
+    specifier: ^11.5.4
     version: 11.5.4(react-dom@18.3.1)(react@18.3.1)
+  gsap:
+    specifier: ^3.12.5
+    version: 3.12.5
   isbot:
     specifier: ^4.1.0
     version: 4.4.0
+  keen-slider:
+    specifier: ^6.8.6
+    version: 6.8.6
   p5:
     specifier: ^1.10.0
     version: 1.10.0
@@ -44,6 +50,9 @@ dependencies:
   react-icons:
     specifier: ^5.3.0
     version: 5.3.0(react@18.3.1)
+  react-scrollama:
+    specifier: ^2.3.3
+    version: 2.3.3(react-dom@18.3.1)(react@18.3.1)
   remix-utils:
     specifier: ^7.6.0
     version: 7.6.0(@remix-run/node@2.12.0)(@remix-run/react@2.12.0)(react@18.3.1)
@@ -3622,6 +3631,10 @@ packages:
     resolution: {integrity: sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==}
     dev: true
 
+  /gsap@3.12.5:
+    resolution: {integrity: sha512-srBfnk4n+Oe/ZnMIOXt3gT605BX9x5+rh/prT2F1SsNJsU1XuMiP0E2aptW481OnonOGACZWBqseH5Z7csHxhQ==}
+    dev: false
+
   /gunzip-maybe@1.4.2:
     resolution: {integrity: sha512-4haO1M4mLO91PW57BMsDFf75UmwoRX0GkdD+Faw+Lr+r/OZrOCS0pIBwOL1xCKQqnQzbNFGgK2V2CpBUPeFNTw==}
     hasBin: true
@@ -4169,6 +4182,10 @@ packages:
       object.assign: 4.1.5
       object.values: 1.2.0
     dev: true
+
+  /keen-slider@6.8.6:
+    resolution: {integrity: sha512-dcEQ7GDBpCjUQA8XZeWh3oBBLLmyn8aoeIQFGL/NTVkoEOsmlnXqA4QykUm/SncolAZYGsEk/PfUhLZ7mwMM2w==}
+    dev: false
 
   /keyv@4.5.4:
     resolution: {integrity: sha512-oxVHkHR/EJf2CNXnWxRLW6mg7JyCCUcG0DtEGmL2ctUo1PNTin1PUil+r/+4r5MpVgC/fn1kjsx7mjSujKqIpw==}
@@ -5592,6 +5609,19 @@ packages:
       react: 18.3.1
     dev: false
 
+  /react-intersection-observer@9.13.1(react-dom@18.3.1)(react@18.3.1):
+    resolution: {integrity: sha512-tSzDaTy0qwNPLJHg8XZhlyHTgGW6drFKTtvjdL+p6um12rcnp8Z5XstE+QNBJ7c64n5o0Lj4ilUleA41bmDoMw==}
+    peerDependencies:
+      react: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+      react-dom: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+    peerDependenciesMeta:
+      react-dom:
+        optional: true
+    dependencies:
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+    dev: false
+
   /react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
     dev: true
@@ -5625,6 +5655,18 @@ packages:
     dependencies:
       '@remix-run/router': 1.19.2
       react: 18.3.1
+
+  /react-scrollama@2.3.3(react-dom@18.3.1)(react@18.3.1):
+    resolution: {integrity: sha512-sFf6vaH3dXQ4Rko2fb7AcHDeVpSBPF0oxUnkvgL3jBVmKXiKk09kWbdvQ9ixlhZ28Y4BY+2N4p2AgLvEr1ab1g==}
+    engines: {node: '>=8', npm: '>=5'}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.2 || ^18.2.0
+      react-dom: ^16.8.0 || ^17.0.2 || ^18.2.0
+    dependencies:
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+      react-intersection-observer: 9.13.1(react-dom@18.3.1)(react@18.3.1)
+    dev: false
 
   /react@18.3.1:
     resolution: {integrity: sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==}
