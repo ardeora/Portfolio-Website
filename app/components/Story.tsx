@@ -265,26 +265,24 @@ const Introduction = () => {
       </div>
 
       <div className="mx-auto max-w-5xl pb-4 text-xl leading-snug text-neutral-300">
-        Have you ever noticed how a movie can make you feel uneasy, inspired,
-        ornostalgic without a single word being spoken? That’s the magic of
-        color. Filmmakers are masterful at using color palettes to set the mood
-        andevoke emotions, whether it’s the warm, golden hues of a heartfelt
-        dramaor the cold, desaturated tones of a gritty thriller. One moment
-        thatstuck with me was watching La La Land for the first time, its
-        vibrant blues, yellows, and reds felt like a visual symphony, perfectly
-        echoingthe highs and lows of the characters' emotions. It’s incredible
-        how acarefully chosen palette can turn a simple scene into
-        somethingunforgettable.
+        Have you ever noticed how a movie can make you feel nostalgic, inspired,
+        or uneasy without any words spoken? That's the power of color.
+        Filmmakers skillfully use color palettes to set the mood and stir
+        emotions, whether it's the warm, golden tones of a drama or the cool,
+        muted shades of a thriller. I remember watching "La La Land" for the
+        first time and being amazed by the bright blues, yellows, and reds. It
+        felt like the colors mirrored the highs and lows of the characters'
+        emotions. It's incredible how a well-chosen palette can turn simple
+        scenes into something unforgettable.
       </div>
 
       <div className="mx-auto max-w-5xl text-xl leading-snug text-neutral-300">
-        But the artistry of color doesn't end with the films themselves.
-        Filmmakers also harness the power of color in movie posters to convey
-        themes and genres even before the first scene unfolds. That's right, the
-        colors in movie posters are carefully chosen to evoke emotions and give
-        you a glimpse into the movie's essence. In this presentation, we'll
-        delve into how the hues and shades on these posters communicate meaning
-        and set the stage for what's to come.
+        But the art of color doesn't start with the films themselves. Filmmakers
+        use color in movie posters to convey themes and genres even before the
+        first scene begins. Colors in movie posters are carefully picked to
+        evoke feelings and give you a glimpse into what the movie is about. In
+        this story, we'll explore how the hues and shades on posters communicate
+        meaning and set the stage for what's to come.
       </div>
       <div className="flex h-[100vh] items-center justify-center">
         <div className="text-center font-editorial text-4xl text-neutral-300">
@@ -459,6 +457,15 @@ const IntroPosters = () => {
                 Red is commonly associated with passion, love, and danger. It's
                 a bold color that can provoke strong emotions and create a sense
                 of urgency or excitement.
+                <div className="pt-2 font-sans text-sm">
+                  Source:{" "}
+                  <a
+                    href="https://www.colorpsychology.org/RED/"
+                    className="underline"
+                  >
+                    Red Color Psychology, Symbolism and Meaning
+                  </a>
+                </div>
               </div>
 
               <div
@@ -470,6 +477,15 @@ const IntroPosters = () => {
                 In this poster, the vivid red tones imply that the movie might
                 be a thriller or horror film, as these genres often use red to
                 build tension and suspense.
+                <div className="pt-2 font-sans text-sm">
+                  Source:{" "}
+                  <a
+                    href="https://slowburnhorror.com/2021/09/24/the-meaning-of-red-in-horror/"
+                    className="underline"
+                  >
+                    The Meaning of Red in Horror
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -518,6 +534,15 @@ const IntroPosters = () => {
                 Blue is often associated with calmness, intelligence, and
                 mystery. It's a color that can evoke feelings of depth and
                 futuristic themes.
+                <div className="pt-2 font-sans text-sm">
+                  Source:{" "}
+                  <a
+                    href="https://www.wendyzhou.se/blog/what-colors-are-futuristic-is-blue-a-futuristic-color"
+                    className="underline"
+                  >
+                    What colors are futuristic?
+                  </a>
+                </div>
               </div>
 
               <div
@@ -529,6 +554,15 @@ const IntroPosters = () => {
                 In this poster, the cool blue hues suggest that the movie might
                 be a sci-fi or action film, as these genres commonly use blue to
                 convey a sense of technology and the unknown.
+                <div className="pt-2 font-sans text-sm">
+                  Source:{" "}
+                  <a
+                    href="https://strelka.co.uk/six-inspiring-colour-palette-approaches-for-your-sci-fi-film-poster/"
+                    className="underline"
+                  >
+                    Strelka
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -577,6 +611,15 @@ const IntroPosters = () => {
                 Yellow is often associated with happiness, optimism, and warmth.
                 It's a color that can evoke feelings of joy and
                 lightheartedness.
+                <div className="pt-2 font-sans text-sm">
+                  Source:{" "}
+                  <a
+                    href="https://www.colorwithleo.com/what-is-the-color-of-happiness-and-positivity/"
+                    className="underline"
+                  >
+                    What is the color of happiness and positivity?
+                  </a>
+                </div>
               </div>
 
               <div
@@ -588,6 +631,15 @@ const IntroPosters = () => {
                 In this poster, the bright yellow tones suggest that the movie
                 might be a romantic comedy, as this genre frequently uses yellow
                 to convey a cheerful and uplifting atmosphere.
+                <div className="pt-2 font-sans text-sm">
+                  Source:{" "}
+                  <a
+                    href="https://digitalsynopsis.com/design/film-movies-color-psychology/"
+                    className="underline"
+                  >
+                    Digital Synopsis
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -599,8 +651,50 @@ const IntroPosters = () => {
 
 const OutroPosters = () => {
   return (
-    <div className="mt-[75vh] h-screen bg-red-950">
-      <div className="mx-auto max-w-5xl"></div>
+    <div className="mt-[75vh] h-[75vh]">
+      <div className="mx-auto max-w-5xl pb-6 text-center font-editorial text-4xl text-neutral-300">
+        Data Project
+      </div>
+      <div className="mx-auto grid max-w-7xl grid-cols-2 gap-6">
+        <div className="flex flex-col gap-4">
+          <div className="text-xl leading-snug text-neutral-300">
+            Using color intentionally in movie posters is more than just making
+            them look good. Colors act as a quick way for audiences to
+            understand a film's mood and genre. This idea is based on color
+            psychology, where different colors trigger specific emotional
+            responses. For example, red can show passion or danger, while blue
+            might suggest calmness or detachment. When designers match the color
+            scheme with the film's themes, they create a consistent and engaging
+            visual story that connects with viewers even before they see the
+            movie. This approach makes marketing materials more effective, so
+            choosing the right colors is a key part of designing movie posters.
+          </div>
+          <div className="mx-auto max-w-5xl pb-4 text-xl leading-snug text-neutral-300">
+            I watched an amazing video by James Verdesoto, a movie poster artist
+            who explained how filmmakers use different color palettes to make
+            their posters really effective.
+          </div>
+          <div className="mx-auto max-w-5xl pb-4 text-xl leading-snug text-neutral-300">
+            After watching the video, I decided to start a data project. I went
+            through Letterboxd and collected 100 posters each for red, yellow,
+            green, and blue color hues. Then, I analyzed which genres were
+            dominant in each color and found out which color posters were most
+            popular for each genre. Here are my findings!
+          </div>
+        </div>
+        <div className="">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/BEbW2fXSShc?si=NAfqGqQWQmx59BgF&amp;controls=0"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          ></iframe>
+        </div>
+      </div>
     </div>
   );
 };
@@ -608,12 +702,14 @@ const OutroPosters = () => {
 const RedInfo = () => {
   return (
     <div className="pb-20">
-      <div className="relative">
-        <BackgroundRedGradientAnimation
-          gradientBackgroundStart="rgb(185, 28, 28)"
-          gradientBackgroundEnd="rgb(225, 29, 72)"
-          interactive={false}
-        />
+      <div className="relative h-screen">
+        <div className="absolute inset-0">
+          <img
+            src="/imgs/tswd/a6/red_bg.png"
+            alt="Movie Poster"
+            className="h-full w-full object-cover"
+          />
+        </div>
         <div className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center font-editorial text-8xl tracking-wide">
           <div>Red Posters</div>
           <div className="pt-2 font-sans text-3xl font-light uppercase tracking-[0.3em] text-neutral-300">
@@ -624,8 +720,12 @@ const RedInfo = () => {
 
       <div className="mx-auto max-w-5xl">
         <div className="pt-20">
-          <div className="pb-4 text-center font-editorial text-3xl">
+          <div className="text-center font-editorial text-3xl">
             Poster Color Palette Fingerprint
+          </div>
+          <div className="pb-4 text-center font-sans text-sm text-neutral-400">
+            Each segment shows a movie poster that has been compressed and
+            blurred to create its unique color palette fingerprint.
           </div>
 
           <div className="relative">
@@ -637,8 +737,11 @@ const RedInfo = () => {
 
       <div className="mx-auto max-w-5xl">
         <div className="pt-20">
-          <div className="pb-4 text-center font-editorial text-3xl">
+          <div className="text-center font-editorial text-3xl">
             Top Genres in Red Movie Posters
+          </div>
+          <div className="pb-4 text-center font-sans text-sm text-neutral-400">
+            Sample size: 100 movie posters
           </div>
           <RedCategories />
           <div className="text-center text-sm text-neutral-400">
@@ -655,8 +758,11 @@ const RedInfo = () => {
 
       <div className="mx-auto max-w-5xl">
         <div className="pt-20">
-          <div className="pb-12 text-center font-editorial text-3xl">
+          <div className="text-center font-editorial text-3xl">
             Genres Dominated by Red Movie Posters
+          </div>
+          <div className="pb-12 text-center font-sans text-sm text-neutral-400">
+            Genres where red movie posters are most popular. Sample size: 400
           </div>
           <div className="mx-auto grid grid-cols-2 gap-6 pb-6">
             <div>
@@ -1115,16 +1221,23 @@ const RedThriller = () => {
 const BlueInfo = () => {
   return (
     <div className="pb-20">
-      <div className="relative">
-        <BackgroundGradientAnimation
+      <div className="relative h-screen">
+        <div className="absolute inset-0">
+          <img
+            src="/imgs/tswd/a6/blue_bg.png"
+            alt="Movie Poster"
+            className="h-full w-full object-cover"
+          />
+        </div>
+        {/* <BackgroundGradientAnimation
           gradientBackgroundStart="rgb(30, 64, 175)"
           gradientBackgroundEnd="rgb(6, 182, 212)"
-          firstColor="5, 150, 105"
+          firstColor="109, 40, 217"
           secondColor="109, 40, 217"
-          thirdColor="5, 150, 105"
-          fourthColor="154, 52, 18"
+          thirdColor="109, 40, 217"
+          fourthColor="110, 30, 73"
           interactive={false}
-        />
+        /> */}
         <div className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center font-editorial text-8xl tracking-wide">
           <div>Blue Posters</div>
           <div className="pt-2 font-sans text-3xl font-light uppercase tracking-[0.3em] text-neutral-300">
@@ -1135,8 +1248,12 @@ const BlueInfo = () => {
 
       <div className="mx-auto max-w-5xl">
         <div className="pt-20">
-          <div className="pb-4 text-center font-editorial text-3xl">
+          <div className="text-center font-editorial text-3xl">
             Poster Color Palette Fingerprint
+          </div>
+          <div className="pb-4 text-center font-sans text-sm text-neutral-400">
+            Each segment shows a movie poster that has been compressed and
+            blurred to create its unique color palette fingerprint.
           </div>
 
           <div className="relative">
@@ -1148,8 +1265,11 @@ const BlueInfo = () => {
 
       <div className="mx-auto max-w-5xl">
         <div className="pt-20">
-          <div className="pb-4 text-center font-editorial text-3xl">
+          <div className="text-center font-editorial text-3xl">
             Top Genres in Blue Movie Posters
+          </div>
+          <div className="pb-4 text-center font-sans text-sm text-neutral-400">
+            Sample size: 100 movie posters
           </div>
           <BlueCategories />
           <div className="text-center text-sm text-neutral-400">
@@ -1166,8 +1286,11 @@ const BlueInfo = () => {
 
       <div className="mx-auto max-w-5xl">
         <div className="pt-20">
-          <div className="pb-12 text-center font-editorial text-3xl">
+          <div className="text-center font-editorial text-3xl">
             Genres Dominated by Blue Movie Posters
+          </div>
+          <div className="pb-12 text-center font-sans text-sm text-neutral-400">
+            Genres where blue movie posters are most popular. Sample size: 400
           </div>
           <div className="mx-auto grid grid-cols-2 gap-6 pb-6">
             <div>
@@ -1625,11 +1748,1195 @@ const BlueDrama = () => {
   );
 };
 
+const yellow_comedy = {
+  labels: ["Red", "Green", "Blue", "Yellow"],
+  datasets: [
+    {
+      label: "My First Dataset",
+      data: [26, 21, 16, 82],
+      backgroundColor: ["#dc26265a", "#16a34a5a", "#2563eb5a", "#eab3085a"],
+      borderColor: ["#dc2626", "#16a34a", "#2563eb", "#eab308"],
+    },
+  ],
+};
+
+const YellowComedy = () => {
+  const chartRef = useRef<any>(null);
+
+  return (
+    <canvas
+      ref={(ctx) => {
+        if (ctx) {
+          // @ts-expect-error
+          const chart = new Chart(ctx, {
+            type: "polarArea",
+            data: yellow_comedy,
+            options: {
+              elements: {
+                line: {
+                  borderWidth: 3,
+                  borderColor: "rgba(113, 36, 213, 0.6)",
+                },
+              },
+              plugins: {
+                legend: {
+                  display: false,
+                },
+                tooltip: {
+                  enabled: true,
+                  displayColors: false,
+                  callbacks: {
+                    title: (toolTipItem: any) => {
+                      return "Comedy";
+                    },
+                    label: (toolTipItem: any) => {
+                      return (
+                        toolTipItem.label +
+                        ": " +
+                        toolTipItem.formattedValue +
+                        " Movies"
+                      );
+                    },
+                    labelColor: undefined,
+                  },
+                },
+              },
+              scales: {
+                r: {
+                  pointLabels: {
+                    color: "#a3a3a3",
+                    font: {
+                      size: 14,
+                      family: "Inter",
+                    },
+                  },
+                  ticks: {
+                    color: "#a3a3a3",
+                    font: {
+                      size: 12,
+                      family: "Inter",
+                    },
+                    backdropColor: "rgba(0, 0, 0, 0)",
+                  },
+                  angleLines: {
+                    color: "#525252",
+                  },
+                  grid: {
+                    color: "#525252",
+                  },
+                },
+              },
+            },
+          });
+
+          chartRef.current = chart;
+        } else {
+          if (chartRef.current) {
+            chartRef.current.destroy();
+          }
+        }
+      }}
+      id="age-chart-e2"
+    ></canvas>
+  );
+};
+
+const yellow_romance = {
+  labels: ["Red", "Green", "Blue", "Yellow"],
+  datasets: [
+    {
+      label: "My First Dataset",
+      data: [36, 19, 15, 43],
+      backgroundColor: ["#dc26265a", "#16a34a5a", "#2563eb5a", "#eab3085a"],
+      borderColor: ["#dc2626", "#16a34a", "#2563eb", "#eab308"],
+    },
+  ],
+};
+
+const YellowRomance = () => {
+  const chartRef = useRef<any>(null);
+
+  return (
+    <canvas
+      ref={(ctx) => {
+        if (ctx) {
+          // @ts-expect-error
+          const chart = new Chart(ctx, {
+            type: "polarArea",
+            data: yellow_romance,
+            options: {
+              elements: {
+                line: {
+                  borderWidth: 3,
+                  borderColor: "rgba(113, 36, 213, 0.6)",
+                },
+              },
+              plugins: {
+                legend: {
+                  display: false,
+                },
+                tooltip: {
+                  enabled: true,
+                  displayColors: false,
+                  callbacks: {
+                    title: (toolTipItem: any) => {
+                      return "Romance";
+                    },
+                    label: (toolTipItem: any) => {
+                      return (
+                        toolTipItem.label +
+                        ": " +
+                        toolTipItem.formattedValue +
+                        " Movies"
+                      );
+                    },
+                    labelColor: undefined,
+                  },
+                },
+              },
+              scales: {
+                r: {
+                  pointLabels: {
+                    color: "#a3a3a3",
+                    font: {
+                      size: 14,
+                      family: "Inter",
+                    },
+                  },
+                  ticks: {
+                    color: "#a3a3a3",
+                    font: {
+                      size: 12,
+                      family: "Inter",
+                    },
+                    backdropColor: "rgba(0, 0, 0, 0)",
+                  },
+                  angleLines: {
+                    color: "#525252",
+                  },
+                  grid: {
+                    color: "#525252",
+                  },
+                },
+              },
+            },
+          });
+
+          chartRef.current = chart;
+        } else {
+          if (chartRef.current) {
+            chartRef.current.destroy();
+          }
+        }
+      }}
+      id="age-chart-e2"
+    ></canvas>
+  );
+};
+
+const yellow_crime = {
+  labels: ["Red", "Green", "Blue", "Yellow"],
+  datasets: [
+    {
+      label: "My First Dataset",
+      data: [5, 8, 7, 17],
+      backgroundColor: ["#dc26265a", "#16a34a5a", "#2563eb5a", "#eab3085a"],
+      borderColor: ["#dc2626", "#16a34a", "#2563eb", "#eab308"],
+    },
+  ],
+};
+
+const YellowCrime = () => {
+  const chartRef = useRef<any>(null);
+
+  return (
+    <canvas
+      ref={(ctx) => {
+        if (ctx) {
+          // @ts-expect-error
+          const chart = new Chart(ctx, {
+            type: "polarArea",
+            data: yellow_crime,
+            options: {
+              elements: {
+                line: {
+                  borderWidth: 3,
+                  borderColor: "rgba(113, 36, 213, 0.6)",
+                },
+              },
+              plugins: {
+                legend: {
+                  display: false,
+                },
+                tooltip: {
+                  enabled: true,
+                  displayColors: false,
+                  callbacks: {
+                    title: (toolTipItem: any) => {
+                      return "Crime";
+                    },
+                    label: (toolTipItem: any) => {
+                      return (
+                        toolTipItem.label +
+                        ": " +
+                        toolTipItem.formattedValue +
+                        " Movies"
+                      );
+                    },
+                    labelColor: undefined,
+                  },
+                },
+              },
+              scales: {
+                r: {
+                  pointLabels: {
+                    color: "#a3a3a3",
+                    font: {
+                      size: 14,
+                      family: "Inter",
+                    },
+                  },
+                  ticks: {
+                    color: "#a3a3a3",
+                    font: {
+                      size: 12,
+                      family: "Inter",
+                    },
+                    backdropColor: "rgba(0, 0, 0, 0)",
+                  },
+                  angleLines: {
+                    color: "#525252",
+                  },
+                  grid: {
+                    color: "#525252",
+                  },
+                },
+              },
+            },
+          });
+
+          chartRef.current = chart;
+        } else {
+          if (chartRef.current) {
+            chartRef.current.destroy();
+          }
+        }
+      }}
+      id="age-chart-e2"
+    ></canvas>
+  );
+};
+
+const yellow_categories = {
+  labels: [
+    "Comedy",
+    "Drama",
+    "Romance",
+    "Crime",
+    "Adventure",
+    "Action",
+    "Family",
+    "Animation",
+    "Thriller",
+    "Fantasy",
+    "Music",
+    "Science Fiction",
+    "Horror",
+    "War",
+    "Mystery",
+    "Western",
+    "History",
+  ],
+  datasets: [
+    {
+      label: "My First Dataset",
+      data: [82, 51, 43, 17, 11, 10, 10, 7, 6, 6, 5, 4, 3, 3, 2, 1, 1],
+      backgroundColor: [
+        "#eab3085a",
+        "#eab3085a",
+        "#eab3085a",
+        "#a3a3a35a",
+        "#a3a3a35a",
+        "#a3a3a35a",
+        "#a3a3a35a",
+        "#a3a3a35a",
+        "#a3a3a35a",
+        "#a3a3a35a",
+        "#a3a3a35a",
+        "#a3a3a35a",
+        "#a3a3a35a",
+        "#a3a3a35a",
+        "#a3a3a35a",
+        "#a3a3a35a",
+        "#a3a3a35a",
+        "#a3a3a35a",
+        "#a3a3a35a",
+      ],
+      borderColor: [
+        "#eab308",
+        "#eab308",
+        "#eab308",
+        "#a3a3a3",
+        "#a3a3a3",
+        "#a3a3a3",
+        "#a3a3a3",
+        "#a3a3a3",
+        "#a3a3a3",
+        "#a3a3a3",
+        "#a3a3a3",
+        "#a3a3a3",
+        "#a3a3a3",
+        "#a3a3a3",
+        "#a3a3a3",
+        "#a3a3a3",
+        "#a3a3a3",
+        "#a3a3a3",
+        "#a3a3a3",
+      ],
+      borderWidth: 1,
+    },
+  ],
+};
+
+const YellowCategories = () => {
+  const chartRef = useRef<any>(null);
+
+  return (
+    <canvas
+      ref={(ctx) => {
+        if (ctx) {
+          // @ts-expect-error
+          const chart = new Chart(ctx, {
+            type: "bar",
+            data: yellow_categories,
+            options: {
+              scales: {
+                y: {
+                  beginAtZero: true,
+                  ticks: {
+                    color: "#a3a3a3",
+                    font: {
+                      size: 14,
+                      family: "Inter",
+                    },
+                  },
+                  grid: {
+                    color: "#5252525a",
+                  },
+                },
+                x: {
+                  ticks: {
+                    color: "#a3a3a3",
+                    font: {
+                      size: 14,
+                      family: "Inter",
+                    },
+                  },
+                  grid: {
+                    color: "#5252525a",
+                  },
+                },
+              },
+              plugins: {
+                legend: {
+                  display: false,
+                },
+                tooltip: {
+                  enabled: true,
+                  displayColors: false,
+                  callbacks: {
+                    title: (toolTipItem: any) => {
+                      return "Genre: ";
+                    },
+                    label: (toolTipItem: any) => {
+                      return (
+                        toolTipItem.label + ": " + toolTipItem.formattedValue
+                      );
+                    },
+                    labelColor: undefined,
+                  },
+                },
+              },
+            },
+          });
+
+          chartRef.current = chart;
+        } else {
+          if (chartRef.current) {
+            chartRef.current.destroy();
+          }
+        }
+      }}
+      id="age-chart-e2"
+    ></canvas>
+  );
+};
+
+const YellowInfo = () => {
+  return (
+    <div className="pb-20">
+      <div className="relative h-screen">
+        <div className="absolute inset-0">
+          <img
+            src="/imgs/tswd/a6/yellow_bg.png"
+            alt="Movie Poster"
+            className="h-full w-full object-cover"
+          />
+        </div>
+        <div className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center font-editorial text-8xl tracking-wide">
+          <div>Yellow Posters</div>
+          <div className="pt-2 font-sans text-3xl font-light uppercase tracking-[0.3em] text-neutral-300">
+            Color Analysis
+          </div>
+        </div>
+      </div>
+
+      <div className="mx-auto max-w-5xl">
+        <div className="pt-20">
+          <div className="text-center font-editorial text-3xl">
+            Poster Color Palette Fingerprint
+          </div>
+          <div className="pb-4 text-center font-sans text-sm text-neutral-400">
+            Each segment shows a movie poster that has been compressed and
+            blurred to create its unique color palette fingerprint.
+          </div>
+
+          <div className="relative">
+            <img src="/imgs/tswd/a6/joined-yellow.png" alt="Movie Poster" />
+            <div className="absolute inset-0 bg-yellow-500/20 mix-blend-color-burn"></div>
+          </div>
+        </div>
+      </div>
+
+      <div className="mx-auto max-w-5xl">
+        <div className="pt-20">
+          <div className="text-center font-editorial text-3xl">
+            Top Genres in Yellow Movie Posters
+          </div>
+          <div className="pb-4 text-center font-sans text-sm text-neutral-400">
+            Sample size: 100 movie posters
+          </div>
+          <YellowCategories />
+          <div className="text-center text-sm text-neutral-400">
+            Source:{" "}
+            <a
+              href="https://letterboxd.com/"
+              className="text-yellow-500 underline"
+            >
+              Letterboxd
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="mx-auto max-w-5xl">
+        <div className="pt-20">
+          <div className="text-center font-editorial text-3xl">
+            Genres Dominated by Yellow Movie Posters
+          </div>
+          <div className="pb-12 text-center font-sans text-sm text-neutral-400">
+            Genres where yellow movie posters are most popular. Sample size: 400
+          </div>
+          <div className="mx-auto grid grid-cols-2 gap-6 pb-6">
+            <div>
+              <YellowComedy />
+              <div className="pt-2 text-center text-neutral-300">
+                Comedy Movies
+              </div>
+            </div>
+
+            <div>
+              <YellowRomance />
+              <div className="pt-2 text-center text-neutral-300">
+                Romance Movies
+              </div>
+            </div>
+          </div>
+          <div className="mx-auto flex justify-center">
+            <div>
+              <div className="h-[500px] w-[500px]">
+                <YellowCrime />
+              </div>
+              <div className="pt-2 text-center text-neutral-300">
+                Crime Movies
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const green_categories = {
+  labels: [
+    "Adventure",
+    "Fantasy",
+    "Drama",
+    "Action",
+    "Comedy",
+    "Animation",
+    "Family",
+    "Romance",
+    "Thriller",
+    "Science Fiction",
+    "Horror",
+    "Crime",
+    "Mystery",
+    "History",
+    "War",
+    "Documentary",
+    "TV Movie",
+  ],
+  datasets: [
+    {
+      label: "My First Dataset",
+      data: [47, 39, 39, 24, 21, 20, 19, 19, 18, 16, 12, 8, 7, 3, 2, 2, 1],
+      backgroundColor: [
+        "#16a34a5a",
+        "#16a34a5a",
+        "#16a34a5a",
+        "#a3a3a35a",
+        "#a3a3a35a",
+        "#a3a3a35a",
+        "#a3a3a35a",
+        "#a3a3a35a",
+        "#a3a3a35a",
+        "#a3a3a35a",
+        "#a3a3a35a",
+        "#a3a3a35a",
+        "#a3a3a35a",
+        "#a3a3a35a",
+        "#a3a3a35a",
+        "#a3a3a35a",
+        "#a3a3a35a",
+        "#a3a3a35a",
+        "#a3a3a35a",
+      ],
+      borderColor: [
+        "#16a34a",
+        "#16a34a",
+        "#16a34a",
+        "#a3a3a3",
+        "#a3a3a3",
+        "#a3a3a3",
+        "#a3a3a3",
+        "#a3a3a3",
+        "#a3a3a3",
+        "#a3a3a3",
+        "#a3a3a3",
+        "#a3a3a3",
+        "#a3a3a3",
+        "#a3a3a3",
+        "#a3a3a3",
+        "#a3a3a3",
+        "#a3a3a3",
+        "#a3a3a3",
+        "#a3a3a3",
+      ],
+      borderWidth: 1,
+    },
+  ],
+};
+
+const GreenCategories = () => {
+  const chartRef = useRef<any>(null);
+
+  return (
+    <canvas
+      ref={(ctx) => {
+        if (ctx) {
+          // @ts-expect-error
+          const chart = new Chart(ctx, {
+            type: "bar",
+            data: green_categories,
+            options: {
+              scales: {
+                y: {
+                  beginAtZero: true,
+                  ticks: {
+                    color: "#a3a3a3",
+                    font: {
+                      size: 14,
+                      family: "Inter",
+                    },
+                  },
+                  grid: {
+                    color: "#5252525a",
+                  },
+                },
+                x: {
+                  ticks: {
+                    color: "#a3a3a3",
+                    font: {
+                      size: 14,
+                      family: "Inter",
+                    },
+                  },
+                  grid: {
+                    color: "#5252525a",
+                  },
+                },
+              },
+              plugins: {
+                legend: {
+                  display: false,
+                },
+                tooltip: {
+                  enabled: true,
+                  displayColors: false,
+                  callbacks: {
+                    title: (toolTipItem: any) => {
+                      return "Genre: ";
+                    },
+                    label: (toolTipItem: any) => {
+                      return (
+                        toolTipItem.label + ": " + toolTipItem.formattedValue
+                      );
+                    },
+                    labelColor: undefined,
+                  },
+                },
+              },
+            },
+          });
+
+          chartRef.current = chart;
+        } else {
+          if (chartRef.current) {
+            chartRef.current.destroy();
+          }
+        }
+      }}
+      id="age-chart-e2"
+    ></canvas>
+  );
+};
+
+const GreenInfo = () => {
+  return (
+    <div className="pb-20">
+      <div className="relative h-screen">
+        <div className="absolute inset-0">
+          <img
+            src="/imgs/tswd/a6/green_bg.png"
+            alt="Movie Poster"
+            className="h-full w-full object-cover"
+          />
+        </div>
+        <div className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center font-editorial text-8xl tracking-wide">
+          <div>Green Posters</div>
+          <div className="pt-2 font-sans text-3xl font-light uppercase tracking-[0.3em] text-neutral-300">
+            Color Analysis
+          </div>
+        </div>
+      </div>
+
+      <div className="mx-auto max-w-5xl">
+        <div className="pt-20">
+          <div className="text-center font-editorial text-3xl">
+            Poster Color Palette Fingerprint
+          </div>
+          <div className="pb-4 text-center font-sans text-sm text-neutral-400">
+            Each segment shows a movie poster that has been compressed and
+            blurred to create its unique color palette fingerprint.
+          </div>
+
+          <div className="relative">
+            <img src="/imgs/tswd/a6/joined-green.png" alt="Movie Poster" />
+            <div className="absolute inset-0 bg-green-400/40 mix-blend-color-burn"></div>
+          </div>
+        </div>
+      </div>
+
+      <div className="mx-auto max-w-5xl">
+        <div className="pt-20">
+          <div className="text-center font-editorial text-3xl">
+            Top Genres in Green Movie Posters
+          </div>
+          <div className="pb-4 text-center font-sans text-sm text-neutral-400">
+            Sample size: 100 movie posters
+          </div>
+          <GreenCategories />
+          <div className="text-center text-sm text-neutral-400">
+            Source:{" "}
+            <a
+              href="https://letterboxd.com/"
+              className="text-green-500 underline"
+            >
+              Letterboxd
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="mx-auto max-w-5xl">
+        <div className="pt-20">
+          <div className="text-center font-editorial text-3xl">
+            Genres Dominated by Green Movie Posters
+          </div>
+          <div className="pb-12 text-center font-sans text-sm text-neutral-400">
+            Genres where green movie posters are most popular. Sample size: 400
+          </div>
+          <div className="mx-auto grid grid-cols-2 gap-6 pb-6">
+            <div>
+              <GreenFantasy />
+              <div className="pt-2 text-center text-neutral-300">
+                Fantasy Movies
+              </div>
+            </div>
+
+            <div>
+              <GreenAdventure />
+              <div className="pt-2 text-center text-neutral-300">
+                Adventure Movies
+              </div>
+            </div>
+          </div>
+          <div className="mx-auto flex justify-center">
+            <div>
+              <div className="h-[500px] w-[500px]">
+                <GreenFamily />
+              </div>
+              <div className="pt-2 text-center text-neutral-300">
+                Family Movies
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const green_fantasy = {
+  labels: ["Red", "Green", "Blue", "Yellow"],
+  datasets: [
+    {
+      label: "My First Dataset",
+      data: [9, 39, 14, 6],
+      backgroundColor: ["#dc26265a", "#16a34a5a", "#2563eb5a", "#eab3085a"],
+      borderColor: ["#dc2626", "#16a34a", "#2563eb", "#eab308"],
+    },
+  ],
+};
+
+const GreenFantasy = () => {
+  const chartRef = useRef<any>(null);
+
+  return (
+    <canvas
+      ref={(ctx) => {
+        if (ctx) {
+          // @ts-expect-error
+          const chart = new Chart(ctx, {
+            type: "polarArea",
+            data: green_fantasy,
+            options: {
+              elements: {
+                line: {
+                  borderWidth: 3,
+                  borderColor: "rgba(113, 36, 213, 0.6)",
+                },
+              },
+              plugins: {
+                legend: {
+                  display: false,
+                },
+                tooltip: {
+                  enabled: true,
+                  displayColors: false,
+                  callbacks: {
+                    title: (toolTipItem: any) => {
+                      return "Fantasy";
+                    },
+                    label: (toolTipItem: any) => {
+                      return (
+                        toolTipItem.label +
+                        ": " +
+                        toolTipItem.formattedValue +
+                        " Movies"
+                      );
+                    },
+                    labelColor: undefined,
+                  },
+                },
+              },
+              scales: {
+                r: {
+                  pointLabels: {
+                    color: "#a3a3a3",
+                    font: {
+                      size: 14,
+                      family: "Inter",
+                    },
+                  },
+                  ticks: {
+                    color: "#a3a3a3",
+                    font: {
+                      size: 12,
+                      family: "Inter",
+                    },
+                    backdropColor: "rgba(0, 0, 0, 0)",
+                  },
+                  angleLines: {
+                    color: "#525252",
+                  },
+                  grid: {
+                    color: "#525252",
+                  },
+                },
+              },
+            },
+          });
+
+          chartRef.current = chart;
+        } else {
+          if (chartRef.current) {
+            chartRef.current.destroy();
+          }
+        }
+      }}
+      id="age-chart-e2"
+    ></canvas>
+  );
+};
+
+const green_adventure = {
+  labels: ["Red", "Green", "Blue", "Yellow"],
+  datasets: [
+    {
+      label: "My First Dataset",
+      data: [1, 47, 26, 11],
+      backgroundColor: ["#dc26265a", "#16a34a5a", "#2563eb5a", "#eab3085a"],
+      borderColor: ["#dc2626", "#16a34a", "#2563eb", "#eab308"],
+    },
+  ],
+};
+
+const GreenAdventure = () => {
+  const chartRef = useRef<any>(null);
+
+  return (
+    <canvas
+      ref={(ctx) => {
+        if (ctx) {
+          // @ts-expect-error
+          const chart = new Chart(ctx, {
+            type: "polarArea",
+            data: green_adventure,
+            options: {
+              elements: {
+                line: {
+                  borderWidth: 3,
+                  borderColor: "rgba(113, 36, 213, 0.6)",
+                },
+              },
+              plugins: {
+                legend: {
+                  display: false,
+                },
+                tooltip: {
+                  enabled: true,
+                  displayColors: false,
+                  callbacks: {
+                    title: (toolTipItem: any) => {
+                      return "Adventure";
+                    },
+                    label: (toolTipItem: any) => {
+                      return (
+                        toolTipItem.label +
+                        ": " +
+                        toolTipItem.formattedValue +
+                        " Movies"
+                      );
+                    },
+                    labelColor: undefined,
+                  },
+                },
+              },
+              scales: {
+                r: {
+                  pointLabels: {
+                    color: "#a3a3a3",
+                    font: {
+                      size: 14,
+                      family: "Inter",
+                    },
+                  },
+                  ticks: {
+                    color: "#a3a3a3",
+                    font: {
+                      size: 12,
+                      family: "Inter",
+                    },
+                    backdropColor: "rgba(0, 0, 0, 0)",
+                  },
+                  angleLines: {
+                    color: "#525252",
+                  },
+                  grid: {
+                    color: "#525252",
+                  },
+                },
+              },
+            },
+          });
+
+          chartRef.current = chart;
+        } else {
+          if (chartRef.current) {
+            chartRef.current.destroy();
+          }
+        }
+      }}
+      id="age-chart-e2"
+    ></canvas>
+  );
+};
+
+const green_family = {
+  labels: ["Red", "Green", "Blue", "Yellow"],
+  datasets: [
+    {
+      label: "My First Dataset",
+      data: [1, 19, 11, 10],
+      backgroundColor: ["#dc26265a", "#16a34a5a", "#2563eb5a", "#eab3085a"],
+      borderColor: ["#dc2626", "#16a34a", "#2563eb", "#eab308"],
+    },
+  ],
+};
+
+const GreenFamily = () => {
+  const chartRef = useRef<any>(null);
+
+  return (
+    <canvas
+      ref={(ctx) => {
+        if (ctx) {
+          // @ts-expect-error
+          const chart = new Chart(ctx, {
+            type: "polarArea",
+            data: green_family,
+            options: {
+              elements: {
+                line: {
+                  borderWidth: 3,
+                  borderColor: "rgba(113, 36, 213, 0.6)",
+                },
+              },
+              plugins: {
+                legend: {
+                  display: false,
+                },
+                tooltip: {
+                  enabled: true,
+                  displayColors: false,
+                  callbacks: {
+                    title: (toolTipItem: any) => {
+                      return "Family";
+                    },
+                    label: (toolTipItem: any) => {
+                      return (
+                        toolTipItem.label +
+                        ": " +
+                        toolTipItem.formattedValue +
+                        " Movies"
+                      );
+                    },
+                    labelColor: undefined,
+                  },
+                },
+              },
+              scales: {
+                r: {
+                  pointLabels: {
+                    color: "#a3a3a3",
+                    font: {
+                      size: 14,
+                      family: "Inter",
+                    },
+                  },
+                  ticks: {
+                    color: "#a3a3a3",
+                    font: {
+                      size: 12,
+                      family: "Inter",
+                    },
+                    backdropColor: "rgba(0, 0, 0, 0)",
+                  },
+                  angleLines: {
+                    color: "#525252",
+                  },
+                  grid: {
+                    color: "#525252",
+                  },
+                },
+              },
+            },
+          });
+
+          chartRef.current = chart;
+        } else {
+          if (chartRef.current) {
+            chartRef.current.destroy();
+          }
+        }
+      }}
+      id="age-chart-e2"
+    ></canvas>
+  );
+};
+
+const CTA = () => {
+  return (
+    <div className="min-h-screen border-t border-neutral-800 pb-40 pt-40">
+      <div className="mx-auto max-w-5xl pb-6 text-center font-editorial text-4xl text-neutral-300">
+        Designing your next movie poster?
+      </div>
+
+      <div className="mx-auto max-w-5xl text-lg text-neutral-300">
+        <p>
+          Here are some color palettes to get you started. Each color palette is
+          inspired by the most popular genres on Letterboxd.
+        </p>
+
+        <div className="flex flex-col gap-4">
+          <div className="flex justify-between pt-4">
+            <div className="flex flex-col">
+              <div className="flex flex-col">
+                <span className="text-base font-bold leading-tight">
+                  Genre:
+                </span>
+                <span className="text-base text-neutral-400">
+                  Horror, Mystery, Thriller, Romance
+                </span>
+              </div>
+            </div>
+
+            <div className="flex flex-col">
+              <span className="text-right text-base font-bold leading-tight">
+                Associated Emotions:
+              </span>
+              <span className="text-right text-base text-neutral-400">
+                Fear, Suspense, Tension, Danger, Love
+              </span>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-5 gap-4">
+            <div className="aspect-square rounded-md bg-[#800011]"></div>
+            <div className="aspect-square rounded-md bg-[#FF4D64]"></div>
+            <div className="aspect-square rounded-md bg-[#FF0022]"></div>
+            <div className="aspect-square rounded-md bg-[#802632]"></div>
+            <div className="aspect-square rounded-md bg-[#CC001C]"></div>
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-4 pt-4">
+          <div className="flex justify-between pt-4">
+            <div className="flex flex-col">
+              <div className="flex flex-col">
+                <span className="text-base font-bold leading-tight">
+                  Genre:
+                </span>
+                <span className="text-base text-neutral-400">
+                  Action, Sci-Fi, Drama, Thriller
+                </span>
+              </div>
+            </div>
+
+            <div className="flex flex-col">
+              <span className="text-right text-base font-bold leading-tight">
+                Associated Emotions:
+              </span>
+              <span className="text-right text-base text-neutral-400">
+                Excitement, Adventure, Mystery, Suspense
+              </span>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-5 gap-4">
+            <div className="aspect-square rounded-md bg-[#93BAE5]"></div>
+            <div className="aspect-square rounded-md bg-[#0477BF]"></div>
+            <div className="aspect-square rounded-md bg-[#21394e]"></div>
+            <div className="aspect-square rounded-md bg-[#0182C6]"></div>
+            <div className="aspect-square rounded-md bg-[#0365A6]"></div>
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-4 pt-4">
+          <div className="flex justify-between pt-4">
+            <div className="flex flex-col">
+              <div className="flex flex-col">
+                <span className="text-base font-bold leading-tight">
+                  Genre:
+                </span>
+                <span className="text-base text-neutral-400">
+                  Comedy, Drama, Romance, Crime
+                </span>
+              </div>
+            </div>
+
+            <div className="flex flex-col">
+              <span className="text-right text-base font-bold leading-tight">
+                Associated Emotions:
+              </span>
+              <span className="text-right text-base text-neutral-400">
+                Happiness, Excitement, Love, Intrigue
+              </span>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-5 gap-4">
+            <div className="aspect-square rounded-md bg-[#731702]"></div>
+            <div className="aspect-square rounded-md bg-[#8C4303]"></div>
+            <div className="aspect-square rounded-md bg-[#BF700F]"></div>
+            <div className="aspect-square rounded-md bg-[#F2AE2E]"></div>
+            <div className="aspect-square rounded-md bg-[#F2D43D]"></div>
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-4 pt-4">
+          <div className="flex justify-between pt-4">
+            <div className="flex flex-col">
+              <div className="flex flex-col">
+                <span className="text-base font-bold leading-tight">
+                  Genre:
+                </span>
+                <span className="text-base text-neutral-400">
+                  Fantasy, Adventure, Family, Animation
+                </span>
+              </div>
+            </div>
+
+            <div className="flex flex-col">
+              <span className="text-right text-base font-bold leading-tight">
+                Associated Emotions:
+              </span>
+              <span className="text-right text-base text-neutral-400">
+                Wonder, Adventure, Joy, Bonding
+              </span>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-5 gap-4">
+            <div className="aspect-square rounded-md bg-[#025918]"></div>
+            <div className="aspect-square rounded-md bg-[#03A61C]"></div>
+            <div className="aspect-square rounded-md bg-[#012606]"></div>
+            <div className="aspect-square rounded-md bg-[#02730A]"></div>
+            <div className="aspect-square rounded-md bg-[#7BD96C]"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const Page = () => {
   return (
     <>
       <Heading />
-
       <Introduction />
 
       <IntroPosters />
@@ -1638,6 +2945,12 @@ const Page = () => {
       <RedInfo />
 
       <BlueInfo />
+
+      <YellowInfo />
+
+      <GreenInfo />
+
+      <CTA />
     </>
   );
 };
