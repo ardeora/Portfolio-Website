@@ -1,7 +1,10 @@
 import { useEffect, useRef } from "react";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
-import { BackgroundGradientAnimation } from "./BGGradient";
+import {
+  BackgroundGradientAnimation,
+  BackgroundRedGradientAnimation,
+} from "./BGGradient";
 
 const useEffectOnce = (effect: React.EffectCallback) => {
   const hasRun = useRef(false);
@@ -604,9 +607,9 @@ const OutroPosters = () => {
 
 const RedInfo = () => {
   return (
-    <div>
+    <div className="pb-20">
       <div className="relative">
-        <BackgroundGradientAnimation
+        <BackgroundRedGradientAnimation
           gradientBackgroundStart="rgb(185, 28, 28)"
           gradientBackgroundEnd="rgb(225, 29, 72)"
           interactive={false}
@@ -836,8 +839,8 @@ const red_horror = {
     {
       label: "My First Dataset",
       data: [72, 12, 10, 3],
-      backgroundColor: ["#dc26265a", "#16a34a5a", "#0284c75a", "#eab3085a"],
-      borderColor: ["#dc2626", "#16a34a", "#0284c7", "#eab308"],
+      backgroundColor: ["#dc26265a", "#16a34a5a", "#2563eb5a", "#eab3085a"],
+      borderColor: ["#dc2626", "#16a34a", "#2563eb", "#eab308"],
     },
   ],
 };
@@ -929,8 +932,8 @@ const red_mystery = {
     {
       label: "My First Dataset",
       data: [16, 7, 14, 2],
-      backgroundColor: ["#dc26265a", "#16a34a5a", "#0284c75a", "#eab3085a"],
-      borderColor: ["#dc2626", "#16a34a", "#0284c7", "#eab308"],
+      backgroundColor: ["#dc26265a", "#16a34a5a", "#2563eb5a", "#eab3085a"],
+      borderColor: ["#dc2626", "#16a34a", "#2563eb", "#eab308"],
     },
   ],
 };
@@ -1022,8 +1025,8 @@ const red_thriller = {
     {
       label: "My First Dataset",
       data: [26, 18, 22, 6],
-      backgroundColor: ["#dc26265a", "#16a34a5a", "#0284c75a", "#eab3085a"],
-      borderColor: ["#dc2626", "#16a34a", "#0284c7", "#eab308"],
+      backgroundColor: ["#dc26265a", "#16a34a5a", "#2563eb5a", "#eab3085a"],
+      borderColor: ["#dc2626", "#16a34a", "#2563eb", "#eab308"],
     },
   ],
 };
@@ -1109,6 +1112,519 @@ const RedThriller = () => {
   );
 };
 
+const BlueInfo = () => {
+  return (
+    <div className="pb-20">
+      <div className="relative">
+        <BackgroundGradientAnimation
+          gradientBackgroundStart="rgb(30, 64, 175)"
+          gradientBackgroundEnd="rgb(6, 182, 212)"
+          firstColor="5, 150, 105"
+          secondColor="109, 40, 217"
+          thirdColor="5, 150, 105"
+          fourthColor="154, 52, 18"
+          interactive={false}
+        />
+        <div className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center font-editorial text-8xl tracking-wide">
+          <div>Blue Posters</div>
+          <div className="pt-2 font-sans text-3xl font-light uppercase tracking-[0.3em] text-neutral-300">
+            Color Analysis
+          </div>
+        </div>
+      </div>
+
+      <div className="mx-auto max-w-5xl">
+        <div className="pt-20">
+          <div className="pb-4 text-center font-editorial text-3xl">
+            Poster Color Palette Fingerprint
+          </div>
+
+          <div className="relative">
+            <img src="/imgs/tswd/a6/joined-blue.png" alt="Movie Poster" />
+            <div className="absolute inset-0 bg-blue-500/30 mix-blend-color-burn"></div>
+          </div>
+        </div>
+      </div>
+
+      <div className="mx-auto max-w-5xl">
+        <div className="pt-20">
+          <div className="pb-4 text-center font-editorial text-3xl">
+            Top Genres in Blue Movie Posters
+          </div>
+          <BlueCategories />
+          <div className="text-center text-sm text-neutral-400">
+            Source:{" "}
+            <a
+              href="https://letterboxd.com/"
+              className="text-blue-500 underline"
+            >
+              Letterboxd
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="mx-auto max-w-5xl">
+        <div className="pt-20">
+          <div className="pb-12 text-center font-editorial text-3xl">
+            Genres Dominated by Blue Movie Posters
+          </div>
+          <div className="mx-auto grid grid-cols-2 gap-6 pb-6">
+            <div>
+              <BlueAction />
+              <div className="pt-2 text-center text-neutral-300">
+                Action Movies
+              </div>
+            </div>
+
+            <div>
+              <BlueSciFi />
+              <div className="pt-2 text-center text-neutral-300">
+                Science Fiction Movies
+              </div>
+            </div>
+          </div>
+          <div className="mx-auto flex justify-center">
+            <div>
+              <div className="h-[500px] w-[500px]">
+                <BlueDrama />
+              </div>
+              <div className="pt-2 text-center text-neutral-300">
+                Drama Movies
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const blue_categories = {
+  labels: [
+    "Drama",
+    "Science Fiction",
+    "Action",
+    "Adventure",
+    "Thriller",
+    "Comedy",
+    "Romance",
+    "Fantasy",
+    "Mystery",
+    "Animation",
+    "Family",
+    "Horror",
+    "Crime",
+    "Documentary",
+    "War",
+    "Western",
+    "Music",
+    "History",
+  ],
+  datasets: [
+    {
+      label: "My First Dataset",
+      data: [51, 34, 34, 26, 22, 16, 15, 14, 14, 11, 11, 10, 7, 3, 2, 2, 1, 1],
+      backgroundColor: [
+        "#2563eb5a",
+        "#2563eb5a",
+        "#2563eb5a",
+        "#a3a3a35a",
+        "#a3a3a35a",
+        "#a3a3a35a",
+        "#a3a3a35a",
+        "#a3a3a35a",
+        "#a3a3a35a",
+        "#a3a3a35a",
+        "#a3a3a35a",
+        "#a3a3a35a",
+        "#a3a3a35a",
+        "#a3a3a35a",
+        "#a3a3a35a",
+        "#a3a3a35a",
+        "#a3a3a35a",
+        "#a3a3a35a",
+        "#a3a3a35a",
+      ],
+      borderColor: [
+        "#2563eb",
+        "#2563eb",
+        "#2563eb",
+        "#a3a3a3",
+        "#a3a3a3",
+        "#a3a3a3",
+        "#a3a3a3",
+        "#a3a3a3",
+        "#a3a3a3",
+        "#a3a3a3",
+        "#a3a3a3",
+        "#a3a3a3",
+        "#a3a3a3",
+        "#a3a3a3",
+        "#a3a3a3",
+        "#a3a3a3",
+        "#a3a3a3",
+        "#a3a3a3",
+        "#a3a3a3",
+      ],
+      borderWidth: 1,
+    },
+  ],
+};
+
+const BlueCategories = () => {
+  const chartRef = useRef<any>(null);
+
+  return (
+    <canvas
+      ref={(ctx) => {
+        if (ctx) {
+          // @ts-expect-error
+          const chart = new Chart(ctx, {
+            type: "bar",
+            data: blue_categories,
+            options: {
+              scales: {
+                y: {
+                  beginAtZero: true,
+                  ticks: {
+                    color: "#a3a3a3",
+                    font: {
+                      size: 14,
+                      family: "Inter",
+                    },
+                  },
+                  grid: {
+                    color: "#5252525a",
+                  },
+                },
+                x: {
+                  ticks: {
+                    color: "#a3a3a3",
+                    font: {
+                      size: 14,
+                      family: "Inter",
+                    },
+                  },
+                  grid: {
+                    color: "#5252525a",
+                  },
+                },
+              },
+              plugins: {
+                legend: {
+                  display: false,
+                },
+                tooltip: {
+                  enabled: true,
+                  displayColors: false,
+                  callbacks: {
+                    title: (toolTipItem: any) => {
+                      return "Genre: ";
+                    },
+                    label: (toolTipItem: any) => {
+                      return (
+                        toolTipItem.label + ": " + toolTipItem.formattedValue
+                      );
+                    },
+                    labelColor: undefined,
+                  },
+                },
+              },
+            },
+          });
+
+          chartRef.current = chart;
+        } else {
+          if (chartRef.current) {
+            chartRef.current.destroy();
+          }
+        }
+      }}
+      id="age-chart-e2"
+    ></canvas>
+  );
+};
+
+const blue_action = {
+  labels: ["Red", "Green", "Blue", "Yellow"],
+  datasets: [
+    {
+      label: "My First Dataset",
+      data: [6, 24, 34, 10],
+      backgroundColor: ["#dc26265a", "#16a34a5a", "#2563eb5a", "#eab3085a"],
+      borderColor: ["#dc2626", "#16a34a", "#2563eb", "#eab308"],
+    },
+  ],
+};
+
+const BlueAction = () => {
+  const chartRef = useRef<any>(null);
+
+  return (
+    <canvas
+      ref={(ctx) => {
+        if (ctx) {
+          // @ts-expect-error
+          const chart = new Chart(ctx, {
+            type: "polarArea",
+            data: blue_action,
+            options: {
+              elements: {
+                line: {
+                  borderWidth: 3,
+                  borderColor: "rgba(113, 36, 213, 0.6)",
+                },
+              },
+              plugins: {
+                legend: {
+                  display: false,
+                },
+                tooltip: {
+                  enabled: true,
+                  displayColors: false,
+                  callbacks: {
+                    title: (toolTipItem: any) => {
+                      return "Action";
+                    },
+                    label: (toolTipItem: any) => {
+                      return (
+                        toolTipItem.label +
+                        ": " +
+                        toolTipItem.formattedValue +
+                        " Movies"
+                      );
+                    },
+                    labelColor: undefined,
+                  },
+                },
+              },
+              scales: {
+                r: {
+                  pointLabels: {
+                    color: "#a3a3a3",
+                    font: {
+                      size: 14,
+                      family: "Inter",
+                    },
+                  },
+                  ticks: {
+                    color: "#a3a3a3",
+                    font: {
+                      size: 12,
+                      family: "Inter",
+                    },
+                    backdropColor: "rgba(0, 0, 0, 0)",
+                  },
+                  angleLines: {
+                    color: "#525252",
+                  },
+                  grid: {
+                    color: "#525252",
+                  },
+                },
+              },
+            },
+          });
+
+          chartRef.current = chart;
+        } else {
+          if (chartRef.current) {
+            chartRef.current.destroy();
+          }
+        }
+      }}
+      id="age-chart-e2"
+    ></canvas>
+  );
+};
+
+const blue_sci_fi = {
+  labels: ["Red", "Green", "Blue", "Yellow"],
+  datasets: [
+    {
+      label: "My First Dataset",
+      data: [12, 16, 34, 4],
+      backgroundColor: ["#dc26265a", "#16a34a5a", "#2563eb5a", "#eab3085a"],
+      borderColor: ["#dc2626", "#16a34a", "#2563eb", "#eab308"],
+    },
+  ],
+};
+
+const BlueSciFi = () => {
+  const chartRef = useRef<any>(null);
+
+  return (
+    <canvas
+      ref={(ctx) => {
+        if (ctx) {
+          // @ts-expect-error
+          const chart = new Chart(ctx, {
+            type: "polarArea",
+            data: blue_sci_fi,
+            options: {
+              elements: {
+                line: {
+                  borderWidth: 3,
+                  borderColor: "rgba(113, 36, 213, 0.6)",
+                },
+              },
+              plugins: {
+                legend: {
+                  display: false,
+                },
+                tooltip: {
+                  enabled: true,
+                  displayColors: false,
+                  callbacks: {
+                    title: (toolTipItem: any) => {
+                      return "Science Fiction";
+                    },
+                    label: (toolTipItem: any) => {
+                      return (
+                        toolTipItem.label +
+                        ": " +
+                        toolTipItem.formattedValue +
+                        " Movies"
+                      );
+                    },
+                    labelColor: undefined,
+                  },
+                },
+              },
+              scales: {
+                r: {
+                  pointLabels: {
+                    color: "#a3a3a3",
+                    font: {
+                      size: 14,
+                      family: "Inter",
+                    },
+                  },
+                  ticks: {
+                    color: "#a3a3a3",
+                    font: {
+                      size: 12,
+                      family: "Inter",
+                    },
+                    backdropColor: "rgba(0, 0, 0, 0)",
+                  },
+                  angleLines: {
+                    color: "#525252",
+                  },
+                  grid: {
+                    color: "#525252",
+                  },
+                },
+              },
+            },
+          });
+
+          chartRef.current = chart;
+        } else {
+          if (chartRef.current) {
+            chartRef.current.destroy();
+          }
+        }
+      }}
+      id="age-chart-e2"
+    ></canvas>
+  );
+};
+
+const blue_drama = {
+  labels: ["Red", "Green", "Blue", "Yellow"],
+  datasets: [
+    {
+      label: "My First Dataset",
+      data: [36, 39, 51, 49],
+      backgroundColor: ["#dc26265a", "#16a34a5a", "#2563eb5a", "#eab3085a"],
+      borderColor: ["#dc2626", "#16a34a", "#2563eb", "#eab308"],
+    },
+  ],
+};
+
+const BlueDrama = () => {
+  const chartRef = useRef<any>(null);
+
+  return (
+    <canvas
+      ref={(ctx) => {
+        if (ctx) {
+          // @ts-expect-error
+          const chart = new Chart(ctx, {
+            type: "polarArea",
+            data: blue_drama,
+            options: {
+              elements: {
+                line: {
+                  borderWidth: 3,
+                  borderColor: "rgba(113, 36, 213, 0.6)",
+                },
+              },
+              plugins: {
+                legend: {
+                  display: false,
+                },
+                tooltip: {
+                  enabled: true,
+                  displayColors: false,
+                  callbacks: {
+                    title: (toolTipItem: any) => {
+                      return "Drama";
+                    },
+                    label: (toolTipItem: any) => {
+                      return (
+                        toolTipItem.label +
+                        ": " +
+                        toolTipItem.formattedValue +
+                        " Movies"
+                      );
+                    },
+                    labelColor: undefined,
+                  },
+                },
+              },
+              scales: {
+                r: {
+                  pointLabels: {
+                    color: "#a3a3a3",
+                    font: {
+                      size: 14,
+                      family: "Inter",
+                    },
+                  },
+                  ticks: {
+                    color: "#a3a3a3",
+                    font: {
+                      size: 12,
+                      family: "Inter",
+                    },
+                    backdropColor: "rgba(0, 0, 0, 0)",
+                  },
+                  angleLines: {
+                    color: "#525252",
+                  },
+                  grid: {
+                    color: "#525252",
+                  },
+                },
+              },
+            },
+          });
+
+          chartRef.current = chart;
+        } else {
+          if (chartRef.current) {
+            chartRef.current.destroy();
+          }
+        }
+      }}
+      id="age-chart-e2"
+    ></canvas>
+  );
+};
+
 const Page = () => {
   return (
     <>
@@ -1120,6 +1636,8 @@ const Page = () => {
       <OutroPosters />
 
       <RedInfo />
+
+      <BlueInfo />
     </>
   );
 };
