@@ -32,12 +32,9 @@ const Home = () => {
         <h1 className="pb-1 text-4xl font-semibold">Final Project Part 2</h1>
         <p className="text-neutral-400">27th November 2024</p>
         <p className="text-neutral-400">
-          <a
-            href="https://carnegiemellon.shorthandstories.com/movie-posters/index.html"
-            className="text-nav-4-600 underline"
-          >
-            Shorthand Project Link
-          </a>
+          <Link to="/tswd/final-project-3" className="text-nav-4-600 underline">
+            Final Data Story Link
+          </Link>
         </p>
       </div>
 

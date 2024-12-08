@@ -31,6 +31,11 @@ const Home = () => {
         </Link>
         <h1 className="pb-1 text-4xl font-semibold">Final Project Part 1</h1>
         <p className="text-neutral-400">20th November 2024</p>
+        <p className="text-neutral-400">
+          <Link to="/tswd/final-project-3" className="text-nav-4-600 underline">
+            Final Data Story Link
+          </Link>
+        </p>
       </div>
 
       <div className="flex flex-col gap-8 pb-12">
