@@ -123,7 +123,7 @@ const Home = () => {
               the 1,800 movies collected, about 500 were dominated by red, while
               only around 80 featured purple palettes. This imbalance skewed the
               visualizations toward red posters. To address this, I chose to
-              focus on just four core colors—red, blue, yellow, and green—and
+              focus on just four core colors, red, blue, yellow, and green, and
               ensured that I collected 100 movie posters for each. The result
               was a set of much clearer, more balanced data visualizations that
               effectively highlighted which genres corresponded to which color
@@ -158,9 +158,9 @@ const Home = () => {
               To explore this idea, I developed a scrollytelling example using
               the GSAP JavaScript animation library. I presented three movie
               posters, each featuring an eye with a silhouette facing it.
-              Although the composition was the same, I varied the color
-              schemes—red, blue, and yellow—to prompt viewers to reflect on how
-              those different palettes altered their emotional response.
+              Although the composition was the same, I varied the color schemes,
+              red, blue, and yellow, to prompt viewers to reflect on how those
+              different palettes altered their emotional response.
             </p>
 
             <p>
